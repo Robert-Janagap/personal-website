@@ -1,0 +1,19 @@
+///test
+body{
+	background: $white;
+}
+
+.new-post{
+	background: #fff;
+	float: left;
+	.nav{
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+		}
+	}
+}
+.side-bar{
+	float: right;
+}

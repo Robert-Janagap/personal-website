@@ -1,0 +1,72 @@
+extends lib/docwrapper
+
+append head-link
+block header
+  header
+    .container.clearfix
+      .logo
+        img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
+      nav.main-nav
+        ul.nav
+          li
+            a(href="") About
+          li
+            a(href="") Blog
+          li
+            a(href="") Contact
+block banner
+  .container.clearfix
+    .m-banner.clearfix
+      .m-banner-picture
+        img(style = "width: 400px;height:350px; background: blue;")
+        p Robert Janagap
+      .m-tagline
+        h1 Constant And Never-ending Improvements
+        span Front-end Developer
+        .green-button
+block mainContent
+  .container
+    h1 Blog Post:
+    article.new-post.clearfix.col-8
+      h2 Blog Title || New Post
+      nav.social-media-share
+        ul.nav
+          li: a(href="") Fb
+          li: a(href="") Twitter
+      .date-posted 03/05/15
+      img(style = "width:150px; height:100px; background: blue;")
+      .content
+        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ut?
+      .category
+    aside.side-bar.col-4
+      h2 Social Media
+      nav.social-media-connect
+        ul
+          li
+            a(href="") fb
+          li
+            a(href="") twitter
+          li
+            a(href="") gmail 
+      h2 Recent Blogs
+      nav.recent-blog-post
+        ul
+         li
+           a(href="")
+         li
+           a(href="")
+         li
+           a(href="")
+         li
+           a(href="")
+         li
+           a(href="")
+      .search-toolbar
+block footer
+  .container
+    footer
+      .logo Im the Logo
+      .copyright copyright by Robert Janagap
+    
+
+    

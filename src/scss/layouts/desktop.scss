@@ -1,0 +1,20 @@
+$susy:(
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+);
+.container{
+	@include container(80%);
+}
+@for $i from 1 through 11 {
+	.col-#{$i}{
+		@include span($i);
+	}
+}
+.col-12{
+	width: 100%;
+	float: left;
+	margin: 0;
+}
