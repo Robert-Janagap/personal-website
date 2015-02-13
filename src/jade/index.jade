@@ -4,10 +4,10 @@ append head-link
 block header
   header
     .container.clearfix
-      .logo
+      .l-logo
         img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-      nav.main-nav
-        ul.nav
+      nav.l-main-nav
+        ul.l-nav
           li
             a(href="") About
           li
@@ -16,57 +16,74 @@ block header
             a(href="") Contact
 block banner
   .container.clearfix
-    .m-banner.clearfix
-      .m-banner-picture
-        img(style = "width: 400px;height:350px; background: blue;")
-        p Robert Janagap
-      .m-tagline
-        h1 Constant And Never-ending Improvements
-        span Front-end Developer
-        .green-button
+    .l-banner.clearfix
+      h1 Constant And Never-ending Improvements
+      .l-banner-picture
+        img(src="assets/img/profile-picture.jpg" alt="Profile Picture")
+        span Robert Janagap
+      .l-tagline
+        span A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.  
+        a.green-button.center View my Portfolio
 block mainContent
-  .container
-    h1 Blog Post:
-    article.new-post.clearfix.col-8
-      h2 Blog Title || New Post
-      nav.social-media-share
-        ul.nav
+  .container.l-main-content
+    h2 New Blogs:
+    .l-new-blog-post.clearfix.col-9
+      article.l-new-blog
+        ul.breadcrumb
           li: a(href="") Fb
           li: a(href="") Twitter
-      .date-posted 03/05/15
-      img(style = "width:150px; height:100px; background: blue;")
-      .content
-        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ut?
-      .category
-    aside.side-bar.col-4
-      h2 Social Media
-      nav.social-media-connect
+        .l-date-posted March 5, 2015
+        h1.l-blog-title Blog Title || New Post
+        img(style = "width:100%; height:200px; background: blue;")
+        p
+          |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+        .blue-button read more
+        .l-category Category: Web Development, Design
+        .l-tags Tag: Youjizz, Fakku
+      article.l-new-blog
+        ul.breadcrumb
+          li: a(href="") Fb
+          li: a(href="") Twitter
+        .l-date-posted March 5, 2015
+        h1.l-blog-title Blog Title || New Post
+        img(style = "width:100%; height:200px; background: blue;")
+        p
+          |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+        .blue-button read more
+        .l-category Category: Web Development, Design
+        .l-tags Tag: Youjizz, Fakku
+    aside.side-bar.col-3
+      nav.sidebar-link
         ul
           li
-            a(href="") fb
-          li
-            a(href="") twitter
-          li
-            a(href="") gmail 
-      h2 Recent Blogs
-      nav.recent-blog-post
-        ul
-         li
-           a(href="")
-         li
-           a(href="")
-         li
-           a(href="")
-         li
-           a(href="")
-         li
-           a(href="")
+            h3 Social Media
+            ul
+              li
+                a(href="") fb
+              li
+                a(href="") twitter
+              li
+                a(href="") gmail 
+          li  
+            h3 Recent Blogs
+            ul
+              li
+                a(href="") blog1
+              li
+                a(href="") blog2 
+              li
+                a(href="") blog3
+              li
+                a(href="") blog4
+              li
+                a(href="") blog4
       .search-toolbar
 block footer
-  .container
-    footer
-      .logo Im the Logo
-      .copyright copyright by Robert Janagap
+  footer.col-12
+    .footer-content.container
+    .logo 
+      img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
+    .copyright copyright 2014
     
 
     

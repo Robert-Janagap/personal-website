@@ -1,19 +1,14 @@
 ///test
 body{
-	background: $white;
+	background: #fff;
+}
+header{
+	box-shadow: 0 2px 5px #ccc,inset 0 -1px 1px #fff;
 }
 
-.new-post{
-	background: #fff;
-	float: left;
-	.nav{
-		margin: 0;
-		padding: 0;
-		li{
-			display: inline-block;
-		}
-	}
+footer{
+	border-top: 2px solid #ccc;
 }
-.side-bar{
-	float: right;
+.l-new-blog{
+	 margin-bottom: 50px;
 }

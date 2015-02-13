@@ -1,20 +1,79 @@
-$susy:(
-	columns: 12,
-	gutters: 1/4,
-	math: fluid,
-	output: float,
-	gutter-position: split,
-);
-.container{
-	@include container(80%);
-}
-@for $i from 1 through 11 {
-	.col-#{$i}{
-		@include span($i);
+@media only screen and (min-width:960px){
+	header{
+		width: 100%;
+		height: 100px;
+		background: $blue-darker;
+		.l-logo{
+			float: left;
+			margin-top: 25px;
+		}
+		.l-main-nav{
+			float: right;
+			.l-nav{
+				padding: 0;
+				margin: 0;
+				margin-top: 40px;
+			}
+			li{
+				display: inline-block;
+				margin-left: 40px;
+				font-size: 1.424rem;
+			}
+		}
 	}
-}
-.col-12{
-	width: 100%;
-	float: left;
-	margin: 0;
+	/** Banner */
+	.l-banner{
+		background: #fefefe;
+		padding: 50px 0;
+		margin: 100px 0;
+		h1{
+			margin-top: 0;
+			margin-bottom: 15px;
+			text-align: center;	
+			font-size: 3rem;
+		}
+		.l-banner-picture{
+			float: left;
+			width: 250px;
+			text-align: center;
+		}
+		.l-tagline{
+			overflow: hidden;
+		}
+	}
+	/** main content */
+	.l-main-content{
+	margin-bottom: 50px;
+	}
+	/**New blog post */
+	.l-new-blog-post{
+		.l-blog-title{
+			text-align: center;
+			padding-bottom: 50px;
+			margin-bottom: 30px;
+			border-bottom: 2px dashed #ccc
+		}
+		.l-new-blog{
+		position: relative;
+		padding-bottom: 50px;
+		border-bottom: 2px solid #ccc; 
+			.l-date-posted{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+	}
+	/** Side bar */
+	.side-bar{
+	padding: 10px;
+	ul{
+		list-style: none;
+	}
+	/** footer */
+	}
+	footer{
+	padding: 50px 0;
+	text-align: center;
+	}
 }
