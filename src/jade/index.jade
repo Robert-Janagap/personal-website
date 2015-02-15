@@ -15,19 +15,22 @@ block header
           li
             a(href="") Contact
 block banner
+  .small-space
   .container.clearfix
     .l-banner.clearfix
-      h1 Constant And Never-ending Improvements
-      .l-banner-picture
+      h1.l-tagline-title Constant And Never-ending Improvements
+      .l-banner-picture.col-4
         img(src="assets/img/profile-picture.jpg" alt="Profile Picture")
-        span Robert Janagap
-      .l-tagline
+        .caption Robert Janagap
+      .l-tagline.col-8
         span A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.  
         a.btn.primary-btn.green-button View my Portfolio
+  hr
 block mainContent
+  .small-space
   .container.l-main-content
-    h2 New Blogs:
-    .l-new-blog-post.clearfix.col-9
+    .l-new-blog-list.clearfix.col-9
+      h2 New Blogs:
       article.l-new-blog
         ul.breadcrumb
           li: a(href="") Fb
@@ -38,8 +41,9 @@ block mainContent
         p
           |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
         a.btn.blue-button read more
-        .l-category Category: Web Development, Design
-        .l-tags Tag: Youjizz, Fakku
+        .l-blog-category
+          p Category: Web Development, Design
+          p Tag: Youjizz, Fakku
       article.l-new-blog
         ul.breadcrumb
           li: a(href="") Fb
@@ -48,25 +52,28 @@ block mainContent
         h1.l-blog-title Blog Title || New Post
         img(style = "width:100%; height:200px; background: blue;")
         p
-          |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+          |   Lorem ipsum dolor sit amet, 
+          a(href="#") consectetur 
+          | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
         a.btn.blue-button read more
-        .l-category Category: Web Development, Design
-        .l-tags Tag: Youjizz, Fakku
-    aside.side-bar.col-3
-      nav.sidebar-link
+        .l-blog-category
+          p Category: Web Development, Design
+          p Tag: Youjizz, Fakku
+    aside.l-side-bar.col-3
+      nav
         ul
-          li
-            h3 Social Media
-            ul
+          li.l-sidebar-list
+            h3.l-sidebar-title Social Media
+            ul.l-sidebar-link
               li
                 a(href="") fb
               li
                 a(href="") twitter
               li
                 a(href="") gmail 
-          li  
-            h3 Recent Blogs
-            ul
+          li.l-sidebar-list  
+            h3.l-sidebar-title Recent Blogs
+            ul.l-sidebar-link
               li
                 a(href="") blog1
               li
@@ -79,6 +86,7 @@ block mainContent
                 a(href="") blog4
       .search-toolbar
 block footer
+  .big-space
   footer.col-12
     .footer-content.container
     .logo 

@@ -6,7 +6,7 @@ $susy:(
 	gutter-position: split,
 );
 .container{
-	@include container(80%);
+	@include container(90%);
 }
 @for $i from 1 through 11 {
 	.col-#{$i}{

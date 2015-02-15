@@ -25,7 +25,7 @@ $colors: (
 );
 @each $color in $colors{
 	.#{nth($color, 1)}-button{
-		background-image: -webkit-linear-gradient(top, nth($color, 3) 50%, nth($color, 2) 50%);
+		background-image: linear-gradient(top, nth($color, 3) 50%, nth($color, 2) 50%);
 	}
 }
 //hover colors
@@ -35,6 +35,6 @@ $hover-colors:(
 );
 @each $hover in $hover-colors{
 	.#{nth($hover, 1)}-button:hover{
-		background-image: -webkit-linear-gradient(top, nth($hover, 3) 40%, nth($hover, 2) 60%);
+		background-image: linear-gradient(top, nth($hover, 3) 40%, nth($hover, 2) 60%);
 	}
 }

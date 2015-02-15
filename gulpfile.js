@@ -60,6 +60,7 @@ gulp.task('compass',function(){
 	  	sass: 'src/scss',
 	  	require: ['susy', 'breakpoint']
 	  }))
+	  .pipe(autoprefix())
 	  .pipe(gulp.dest('./build/assets/css/'))
 });
 /////
