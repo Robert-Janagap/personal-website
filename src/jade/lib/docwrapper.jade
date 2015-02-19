@@ -19,28 +19,13 @@ html.no-js
       | to improve your experience.
     <![endif]-->
     
-    header
-      .container.clearfix
-        .l-logo
-          block logo
-        nav.l-main-nav
-          ul.l-nav
-            li
-              a(href="about/index.html") About
-            li
-              a(href="blog/index.html") Blog
-            li
-              a(href="contact/index.html") Contact
+    include header
+    
     block banner
+    .container
+      block mainContent
+      include sideBar
 
-    block mainContent
-
-    block aside
-
-    footer.col-12
-      .footer-content.container
-      .logo 
-        block logo
-      .copyright copyright 2014
+    include footer
 
     include scripts
