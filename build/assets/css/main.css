@@ -288,6 +288,10 @@ footer {
   margin-bottom: 50px;
 }
 
+.l-logo {
+  background: url("assets/img/logo.png");
+}
+
 .breadcrumb {
   margin: 0;
   padding: 0;

@@ -66,7 +66,7 @@ gulp.task('compass',function(){
 /////
 /** watch task*/
 gulp.task('watch', function(){
-	gulp.watch('src/jade/*.jade',['jade'])
+	gulp.watch('src/jade/**/*.jade',['jade'])
 	gulp.watch('src/scss/**/*.scss',['compass'])
 });
 

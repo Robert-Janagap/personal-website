@@ -9,7 +9,6 @@ html.no-js
     block head-link
       link(rel='stylesheet', href='assets/css/lib/normalize.css')
       link(rel='stylesheet', href='assets/css/lib/boilerplate-style.css')
-      link(rel="stylesheet" href="assets/css/main.css")
     //-script(src='assets/js/modernizr-2.7.1.min.js')
 
   body
@@ -20,14 +19,28 @@ html.no-js
       | to improve your experience.
     <![endif]-->
     
-    block header
-
+    header
+      .container.clearfix
+        .l-logo
+          block logo
+        nav.l-main-nav
+          ul.l-nav
+            li
+              a(href="about/index.html") About
+            li
+              a(href="blog/index.html") Blog
+            li
+              a(href="contact/index.html") Contact
     block banner
 
     block mainContent
 
     block aside
 
-    block footer
+    footer.col-12
+      .footer-content.container
+      .logo 
+        block logo
+      .copyright copyright 2014
 
     include scripts

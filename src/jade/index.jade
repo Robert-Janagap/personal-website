@@ -1,19 +1,9 @@
 extends lib/docwrapper
 
 append head-link
-block header
-  header
-    .container.clearfix
-      .l-logo
-        img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-      nav.l-main-nav
-        ul.l-nav
-          li
-            a(href="") About
-          li
-            a(href="") Blog
-          li
-            a(href="") Contact
+   link(rel="stylesheet" href="assets/css/main.css")
+append logo 
+   img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
 block banner
   .small-space
   .container.clearfix
@@ -25,6 +15,7 @@ block banner
       .l-tagline.col-8
         span A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.  
         a.btn.primary-btn.green-button View my Portfolio
+  .small-space
   hr
 block mainContent
   .small-space
@@ -85,13 +76,7 @@ block mainContent
               li
                 a(href="") blog4
       .search-toolbar
-block footer
   .big-space
-  footer.col-12
-    .footer-content.container
-    .logo 
-      img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-    .copyright copyright 2014
     
 
     
