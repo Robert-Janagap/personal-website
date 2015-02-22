@@ -24,6 +24,10 @@ a:active {
   color: #2222FF;
 }
 
+ul {
+  list-style: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 15px;
@@ -176,6 +180,17 @@ ul {
   margin: 0;
 }
 
+section {
+  padding: 10px;
+  background: #fff;
+}
+
+.skills {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: circle;
+}
+
 @media only screen and (min-width: 960px) {
   header {
     width: 100%;
@@ -200,6 +215,9 @@ ul {
     font-size: 1.424rem;
   }
 
+  /**
+   * Home page
+   */
   /** Banner */
   .l-banner {
     background: #fefefe;
@@ -248,8 +266,18 @@ ul {
     margin: 0px;
   }
 
+  /**
+   * end of home page
+   */
+  /**
+   * About page
+   */
+  /**
+   * end of about page
+   */
   /** Side bar */
   .l-side-bar {
+    background: #fff;
     /** footer */
   }
   .l-side-bar .l-sidebar-list {
@@ -273,7 +301,7 @@ ul {
   }
 }
 body {
-  background: #fff;
+  background: #f2f2f2;
 }
 
 header {

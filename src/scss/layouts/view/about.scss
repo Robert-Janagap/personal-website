@@ -1,0 +1,12 @@
+section{
+	padding: 10px;
+	background: #fff;
+}
+section:not(:last-child){
+	//
+}
+.skills{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	list-style-type: circle;
+}
