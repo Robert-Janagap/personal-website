@@ -1,6 +1,27 @@
 extends ../lib/docwrapper
 
 append head-link
-  link(rel ="stylesheet" href="../assets/css/main.css")
+    link(rel ="stylesheet" href="../assets/css/main.css")
+    link(rel='stylesheet', href='../assets/css/lib/normalize.css')
+    link(rel='stylesheet', href='../assets/css/lib/boilerplate-style.css')
 append logo 
-  img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+    img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+block mainContent
+    main.col-9
+        section.clearfix
+            img(src="../assets/img/logo.png" alt="My Logo").col-3
+            p.col-9  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, incidunt maxime atque totam cupiditate aperiam eos. Voluptatum excepturi quae quo animi nulla. Aliquid corrupti eius quis itaque amet nam aspernatur!
+        section
+            h2 skills
+            ul
+                li
+                    a(href="") HTML5
+                li
+                    a(href="") CSS3
+                li
+                    a(href="") Js
+        section 
+            h2 projects
+            ul
+                li
+                    a(href="") Personal Website
