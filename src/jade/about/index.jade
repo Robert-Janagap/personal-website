@@ -1,11 +1,19 @@
 extends ../lib/docwrapper
 
 append head-link
-    link(rel ="stylesheet" href="../assets/css/main.css")
     link(rel='stylesheet', href='../assets/css/lib/normalize.css')
     link(rel='stylesheet', href='../assets/css/lib/boilerplate-style.css')
+    link(rel ="stylesheet" href="../assets/css/main.css")
 append logo 
-    img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+    a(href="../index.html")
+        img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+append main-nav-links
+    li
+      a(href="index.html") About
+    li
+      a(href="../blog/index.html") Blog
+    li
+      a(href="../contact/index.html") Contact
 block mainContent
     main.col-9
         section.clearfix

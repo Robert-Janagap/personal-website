@@ -1,12 +1,20 @@
 extends lib/docwrapper
 
 append head-link
-   link(rel="stylesheet" href="assets/css/main.css")
-   link(rel='stylesheet', href='assets/css/lib/normalize.css')
-   link(rel='stylesheet', href='assets/css/lib/boilerplate-style.css')
+    link(rel='stylesheet', href='assets/css/lib/normalize.css')
+    link(rel='stylesheet', href='assets/css/lib/boilerplate-style.css')
+    link(rel="stylesheet" href="assets/css/main.css")
 append logo 
-   img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-append banner
+    a(href="index.html")
+        img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
+append main-nav-links
+    li
+        a(href="about/index.html") About
+    li
+        a(href="blog/index.html") Blog
+    li
+        a(href="contact/index.html") Contact
+block banner
   .container.clearfix
     .l-banner.clearfix
       h1.l-tagline-title Constant And Never-ending Improvements
