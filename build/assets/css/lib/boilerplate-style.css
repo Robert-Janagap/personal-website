@@ -187,13 +187,13 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+.container:before,.clearfix:before,
+.container:after,.clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
     overflow: hidden;/*My addition */ 
 }
-.clearfix:after {
+.container:after,.clearfix:after {
     clear: both;
 }
 

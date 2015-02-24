@@ -15,16 +15,16 @@ append main-nav-links
     li
         a(href="contact/index.html") Contact
 block banner
-  .container.clearfix
-    .l-banner.clearfix
-      h1.l-tagline-title Constant And Never-ending Improvements
-      .l-banner-picture.col-4
-        img(src="assets/img/profile-picture.jpg" alt="Profile Picture")
-        .caption Robert Janagap
-      .l-tagline.col-8
-        span A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.  
-        a.btn.primary-btn.green-button View my Portfolio
-  .small-space
+    .l-banner
+        .container
+            h1.l-tagline-title Constant And Never-ending Improvements
+            .l-tagline
+                .l-tagline-picture
+                    img(src="assets/img/pw-picture.png" alt="Profile Picture")
+                    .caption Robert Y. Janagap
+                p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.  
+                a(href="#").btn.large-btn.blue-button view my portfolio
+    .small-space
   hr
 block mainContent
   .l-main-content
@@ -34,12 +34,12 @@ block mainContent
         ul.breadcrumb
           li: a(href="") Fb
           li: a(href="") Twitter
-        .l-date-posted March 5, 2015
-        h1.l-blog-title Blog Title || New Post
-        img(style = "width:100%; height:200px; background: blue;")
+        .l-date-posted March 5, 2015 / Robert Janagap
+        h1.l-new-blog-title Blog Title || New Post
+        img(src="assets/img/image_1.jpg").l-new-blog-picture
         p
           |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
-        a.btn.blue-button read more
+        a(href="#").btn.red-button read more
         .l-blog-category
           p Category: Web Development, Design
           p Tag: Youjizz, Fakku
@@ -47,14 +47,12 @@ block mainContent
         ul.breadcrumb
           li: a(href="") Fb
           li: a(href="") Twitter
-        .l-date-posted March 5, 2015
-        h1.l-blog-title Blog Title || New Post
-        img(style = "width:100%; height:200px; background: blue;")
+        .l-date-posted March 5, 2015 / Robert Janagap
+        h1.l-new-blog-title Blog Title || New Post
+        img(src="assets/img/image_1.jpg").l-new-blog-picture
         p
-          |   Lorem ipsum dolor sit amet, 
-          a(href="#") consectetur 
-          | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
-        a.btn.blue-button read more
+          |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+        a(href="#").btn.red-button read more
         .l-blog-category
           p Category: Web Development, Design
           p Tag: Youjizz, Fakku
