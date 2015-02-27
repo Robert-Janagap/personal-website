@@ -1,12 +1,4 @@
-section{
-	padding: 10px;
-	background: #fff;
-}
-section:not(:last-child){
-	//
-}
-.skills{
-	margin-left: 20px;
-	margin-bottom: 20px;
-	list-style-type: circle;
+.widgets ul{
+	@include gallery(3 of 9);
+	background: #C6CA13;
 }
