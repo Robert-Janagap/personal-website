@@ -3,11 +3,11 @@ html.no-js
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Wizard
+    block title-page
     meta(name='description', content='My Personal website home page.')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='assets/js/modernizr-2.7.1.min.js')
     block head-link
-    //-script(src='assets/js/modernizr-2.7.1.min.js')
 
   body
     <!--[if lt IE 8]>
@@ -16,9 +16,9 @@ html.no-js
       | Please <a href="http://browsehappy.com/">upgrade your browser</a>
       | to improve your experience.
     <![endif]-->
-    
+
     include header
-    
+
     block banner
 
     .small-space

@@ -1,19 +1,25 @@
 extends ../lib/docwrapper
 
+append title-page
+    title About me
+
 append head-link
-    link(rel='stylesheet', href='../assets/css/lib/normalize.css')
-    link(rel='stylesheet', href='../assets/css/lib/boilerplate-style.css')
-    link(rel ="stylesheet" href="../assets/css/main.css")
+    link(rel ='stylesheet' href='../assets/css/lib/normalize.css')
+    link(rel ='stylesheet' href='../assets/css/lib/boilerplate-style.css')
+    link(rel ='stylesheet' href='../assets/css/main.css')
+
 append logo 
     a(href="../")
         img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+
 append main-nav-links
     li
-      a(href="") About
+        a(href="") About
     li
-      a(href="../blog/index.html") Blog
+        a(href="../blog/") Blog
     li
-      a(href="../contact/index.html") Contact
+        a(href="../contact/") Contact
+
 block mainContent
     main.col-9
         .l-about-me.clearfix
