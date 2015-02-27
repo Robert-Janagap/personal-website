@@ -21,6 +21,39 @@ header{
 		}
 	}
 }
+/** Content */
+//for home page new blog list
+.l-blog{
+	position: relative;
+	margin-bottom: 50px;
+	padding-bottom: $list-new-blog-padding-bottom;
+	border-bottom: $list-new-blog-border-bottom;
+	.l-blog-date-posted{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.breadcrumb{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+		li{
+			display: inline-block;
+		}
+	}
+	.l-blog-title{
+		text-align: center;
+		padding-bottom: $list-blog-title-padding-bottom;
+		margin-bottom: $list-blog-title-margin-bottom;
+		border-bottom: $list-blog-title-border-bottom;
+	}
+	.l-blog-category{
+		margin-top: $blog-category-margin-top;
+		p{
+			margin:$blog-category-p-margin;
+		}
+	}
+}
 /** Side bar */
 .l-side-bar{
 background: #fff;
