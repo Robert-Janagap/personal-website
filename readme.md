@@ -1,1 +1,1 @@
-My first Website and first Project.
+My Personal Website and Training Ground :D
