@@ -18,20 +18,12 @@
 //buttons color
 $colors: (
 	"red" rgb(234, 3, 3),
-	"blue" rgb(3, 164, 234)
+	"blue" rgb(3, 164, 234),
+	"orange" rgb(234, 108, 3),
+	"green" rgb(3, 234, 6)
 );
 @each $color in $colors{
 	.#{nth($color, 1)}-button{
 		background:nth($color, 2);
-	}
-}
-//hover colors
-$hover-colors:(
-	"red" #9dc02e rgb(234, 3, 3),
-	"blue" #37465d  rgb(3, 164, 234)
-);
-@each $hover in $hover-colors{
-	.#{nth($hover, 1)}-button:hover{
-		background-image: linear-gradient(top, nth($hover, 3) 40%, nth($hover, 2) 60%);
 	}
 }

@@ -1,4 +1,23 @@
+h2,h3 {
+	font-weight: normal;
+}
+.skills {
+	li{
+		list-style-type: circle;
+		margin-left: 15px;
+	}
+}
 .widgets ul{
 	@include gallery(3 of 9);
-	background: #C6CA13;
 }
+.projects {
+	li{
+		height: 200px;
+		list-style-type: none;
+		border:2px solid #d9e0e2;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+	}
+}
+
+
+

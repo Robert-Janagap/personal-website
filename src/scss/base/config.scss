@@ -14,7 +14,7 @@ a{
 	font-family: 'ubuntu';
 }
 a:active{
-	color: #2222FF; 
+	color: #2222FF;
 }
 ul{
 	list-style:none;
@@ -45,5 +45,10 @@ h6{
 ul{
 	padding: 0;
 	margin: 0;
+}
+//getting rid of deprecation warning in susy
+@mixin box-sizing($value){
+	-moz-box-sizing: $value;
+		 box-sizing: $value;
 }
 
