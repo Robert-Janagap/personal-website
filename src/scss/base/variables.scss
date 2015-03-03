@@ -8,11 +8,11 @@ $h5-font-size: 1.125rem;
 $h6-font-size: 1rem;
 
 /** Header */
-$header-height: 100px;
-$header-logo-margin-top: 25px;
-$header-nav-margin-top: 40px;
+$header-height: 80px;
+$header-logo-margin-top: 18px;
+$header-nav-margin-top: 30px;
 $header-nav-menu-margin-left: 40px;
-
+$header-box-shadow:	0 2px 5px #ccc,inset 0 -1px 3px #A1A0A0;
 /** banner */
 // after the photoshop picture
 //banner text-align center try it
@@ -26,9 +26,9 @@ $list-new-blog-border-bottom: 2px solid #ccc;
 $blog-category-margin-top:20px;
 $blog-category-p-margin: 0px;
 
-//main color: 
+//main color:
 $white : #f2f2f2;
 $blue-dark : #37465d;
 $blue-darker : #051a37;
 $green-dark : #9dc02e;
-$green-darker : #779324; 
+$green-darker : #779324;
