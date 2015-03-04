@@ -16,10 +16,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #FF2222;
   font-family: 'ubuntu';
+  color: #7E7E7E;
 }
-
 a:active {
   color: #2222FF;
 }
@@ -280,17 +279,22 @@ header a:hover {
 /** Side bar */
 .l-side-bar {
   background: #fff;
-}
-.l-side-bar .l-sidebar-list {
   border-bottom: 2px solid #ccc;
   padding: 10px;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
+.l-side-bar a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.l-side-bar .sideBar-about-me {
+  margin-bottom: 5px;
+}
 .l-side-bar .l-sidebar-title {
   margin-bottom: 5px;
 }
-.l-side-bar .l-sidebar-link {
+.l-side-bar li + li {
   margin-left: 10px;
 }
 .l-side-bar ul {

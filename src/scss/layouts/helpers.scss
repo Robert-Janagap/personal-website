@@ -31,16 +31,21 @@ header{
 /** Side bar */
 .l-side-bar{
 background: #fff;
-	.l-sidebar-list{
-		border-bottom: 2px solid #ccc;
-		padding: 10px;
-		padding-bottom: 5px;
+border-bottom: 2px solid #ccc;
+padding: 10px;
+padding-bottom: 5px;
+margin-bottom: 5px;
+	a:hover{
+		color: #000;
+		text-decoration: underline;
+	}
+	.sideBar-about-me{
 		margin-bottom: 5px;
 	}
 	.l-sidebar-title{
 		margin-bottom: 5px;
 	}
-	.l-sidebar-link{
+	li + li{
 		margin-left: 10px;
 	}
 	ul{

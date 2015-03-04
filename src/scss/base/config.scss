@@ -10,11 +10,11 @@ body{
 }
 a{
 	text-decoration: none;
-	color: #FF2222;
 	font-family: 'ubuntu';
-}
-a:active{
-	color: #2222FF;
+	color: #7E7E7E;
+	&:active{
+		color: #2222FF;
+	}
 }
 ul{
 	list-style:none;
