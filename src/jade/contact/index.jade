@@ -1,0 +1,48 @@
+extends ../lib/docwrapper
+append title-page
+    title Contact me
+append head-link
+    link(rel ='stylesheet' href='../assets/css/lib/normalize.css')
+    link(rel ='stylesheet' href='../assets/css/lib/boilerplate-style.css')
+    link(rel ='stylesheet' href='../assets/css/main.css')
+append logo
+    a(href='../')
+        img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+append main-nav-links
+    li
+        a(href="../about/") About
+    li
+        a(href="../blog/") Blog
+    li
+        a(href="") Contact
+block mainContent
+    main.col-9
+        article.contact
+            h1 Contact me
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias, maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis.
+            form.contact-form
+                table
+                    tr
+                        td
+                            label(for="full_name") Name:
+                        td
+                            input(type="text" name ="full_name" maxlength="30" placeholder="Enter your full name" required)
+                    tr
+                        td
+                            label(for="email") Email:
+                        td
+                            input(type="email" name="email_address" maxlength="80" placeholder="Example@gmail.com" required)
+                    tr
+                        td
+                            label(for="Website") Website:
+                        td
+                            input(type="url" name="home_page" placeholder="http://example.com")
+                    tr
+                        td
+                            label(for="message") Message:
+                    tr
+                        td(colspan="2")
+                            textarea(name="message" maxlength="1000" cols="50" rows="6")
+                    tr
+                        td
+                            input(type="submit" value="submit")
