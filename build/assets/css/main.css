@@ -20,7 +20,7 @@ a {
   color: #7E7E7E;
 }
 a:active {
-  color: #2222FF;
+  color: #fff;
 }
 
 ul {
@@ -263,6 +263,7 @@ ul {
   border: 1px solid #BDBDBD;
   border-radius: 5px;
   padding: 10px 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 .contact-form td textarea {
   resize: none;
@@ -295,29 +296,29 @@ header .l-main-nav li {
   margin-left: 40px;
   font-size: 1.424rem;
 }
-header a {
-  color: #AEAEAE;
-}
 header a:hover {
   color: #EDEDED;
 }
 
 /** Side bar */
 .l-side-bar {
-  background: #fff;
   border-bottom: 2px solid #ccc;
-  padding: 10px;
-  padding-bottom: 5px;
+  padding: 10px 10px 20px;
   margin-bottom: 5px;
 }
 .l-side-bar a:hover {
   color: #000;
   text-decoration: underline;
 }
+.l-side-bar a:active {
+  color: #03a4ea;
+}
 .l-side-bar .sideBar-about-me {
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 .l-side-bar .l-sidebar-title {
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 .l-side-bar li + li {
@@ -325,6 +326,23 @@ header a:hover {
 }
 .l-side-bar ul {
   list-style: none;
+}
+.l-side-bar .search-blog {
+  margin-top: 10px;
+}
+.l-side-bar .search-blog input {
+  height: 34px;
+  padding-left: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.l-side-bar .search-blog button {
+  height: 34px;
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 8px 8px 0;
 }
 
 /** footer */
@@ -374,9 +392,9 @@ footer {
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
-  color: white;
+  color: #fff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 1.5rem;
 }
 

@@ -21,7 +21,6 @@ header{
 		}
 	}
 	a{
-		color: #AEAEAE;
 		&:hover{
 			color:#EDEDED;
 		}
@@ -30,19 +29,24 @@ header{
 
 /** Side bar */
 .l-side-bar{
-background: #fff;
-border-bottom: 2px solid #ccc;
-padding: 10px;
-padding-bottom: 5px;
+border-bottom: 2px solid #ccc;//
+padding: 10px 10px 20px;
 margin-bottom: 5px;
-	a:hover{
-		color: #000;
-		text-decoration: underline;
+	a{
+		&:hover{
+			color: #000;
+			text-decoration: underline;
+		}
+		&:active{
+			color:rgb(3, 164, 234);
+		}
 	}
 	.sideBar-about-me{
+		margin-top: 0px;
 		margin-bottom: 5px;
 	}
 	.l-sidebar-title{
+		margin-top: 0px;
 		margin-bottom: 5px;
 	}
 	li + li{
@@ -50,6 +54,23 @@ margin-bottom: 5px;
 	}
 	ul{
 		list-style: none;
+	}
+	.search-blog{
+		margin-top:10px;
+		input{
+			height: 34px;
+			padding-left: 10px;
+			border-radius: 8px 0 0 8px;
+			border: 1px solid #ccc;
+			outline: none;
+		}
+		button{
+			height: 34px;
+			padding: 0 10px;
+			background: #fff;
+			border: 1px solid #ccc;
+			border-radius: 0 8px 8px 0;
+		}
 	}
 }
 
