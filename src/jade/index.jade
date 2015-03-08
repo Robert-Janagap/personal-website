@@ -21,44 +21,52 @@ append main-nav-links
         a(href="contact/") Contact
 
 block banner
-    .l-banner
+    .banner
         .container
-            h1.l-tagline-title Constant And Never-ending Improvements
-            .l-tagline
-                .l-tagline-picture
+            h1.tagLine_title Constant And Never-ending Improvements
+            .tagLine
+                .tagLine_picture
                     img(src="assets/img/pw-picture.png" alt="Profile Picture")
                     .caption Robert Y. Janagap
                 p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.
-                a(href="#").btn.large-btn.blue-button view my portfolio
+                a(href="#").btn.btn_large.btn_blue view my portfolio
   hr
 
 block mainContent
     main.col-9
         h2 New Blogs:
-        .l-blog.clearfix
+        .blog.clearfix
             ul.breadcrumb
                 li: a(href="") Fb
                 li: a(href="") Twitter
-            .l-blog-date-posted March 5, 2015 / Robert Janagap
-            h1.l-blog-title Blog Title || New Post
-            img(src="assets/img/image_1.jpg").l-new-blog-picture
-            p
-              |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+            .blog_date_posted
+                | March 5, 2015 /
+                a(href="about/index.html") Robert Janagap
+            h1.blog_title Blog Title || New Post
+            img(src="assets/img/image_1.jpg").blog_picture
+            p.blog_content
+              |   Lorem ipsum dolor sit amet,
+              a(href="#").blog_content_links consectetur
+              | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
             a(href="#").btn.green-button read more
-            .l-blog-category
+            .blog_category
                 p Category: Web Development, Design
                 p Tag: Youjizz, Fakku
-        .l-blog.clearfix
+        .blog.clearfix
             ul.breadcrumb
                 li: a(href="") Fb
                 li: a(href="") Twitter
-            .l-blog-date-posted March 5, 2015 / Robert Janagap
-            h1.l-blog-title Blog Title || New Post
-            img(src="assets/img/image_1.jpg").l-new-blog-picture
-            p
-              |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+            .blog_date_posted
+                | March 5, 2015 /
+                a(href="about/index.html") Robert Janagap
+            h1.blog_title Blog Title || New Post
+            img(src="assets/img/image_1.jpg").blog_picture
+            p.blog_content
+              |   Lorem ipsum dolor sit amet,
+              a(href="#").blog_content_links consectetur
+              | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
             a(href="#").btn.green-button read more
-            .l-blog-category
+            .blog_category
                 p Category: Web Development, Design
                 p Tag: Youjizz, Fakku
 

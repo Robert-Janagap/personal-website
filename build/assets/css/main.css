@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font: 100%/1.4 "lato",Tahoma,sans-serif;
+  font-weight: 400;
   color: #222;
   background: #fff;
 }
@@ -19,8 +20,12 @@ a {
   font-family: 'ubuntu';
   color: #7E7E7E;
 }
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 a:active {
-  color: #fff;
+  color: #03a4ea;
 }
 
 ul {
@@ -193,7 +198,7 @@ ul {
 }
 
 /** Banner */
-.l-banner {
+.banner {
   background: url("../img/pw-banner-bg.jpg") no-repeat;
   background-size: cover;
   min-width: 1024px;
@@ -201,17 +206,12 @@ ul {
   color: #fff;
   text-align: center;
 }
-.l-banner .l-tagline-title {
+.banner .tagLine_title {
   margin: 50px 0;
   font-size: 2.8rem;
 }
-.l-banner .l-tagline .large-btn {
+.banner .btn_large {
   margin: 0 auto;
-}
-
-.l-blog .l-new-blog-picture {
-  width: 100%;
-  height: 350px;
 }
 
 .skills li {
@@ -279,65 +279,60 @@ header {
   background: #051a37;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
-header .l-logo {
+header .logo {
   float: left;
   margin-top: 18px;
 }
-header .l-main-nav {
+header .nav_main {
   float: right;
 }
-header .l-main-nav .l-nav {
+header .nav_main .nav_main_links {
   padding: 0;
   margin: 0;
   margin-top: 30px;
 }
-header .l-main-nav li {
+header .nav_main li {
   display: inline-block;
   margin-left: 40px;
   font-size: 1.424rem;
 }
 header a:hover {
   color: #EDEDED;
+  text-decoration: none;
 }
 
 /** Side bar */
-.l-side-bar {
+.sideBar {
   border-bottom: 2px solid #ccc;
   padding: 10px 10px 20px;
   margin-bottom: 5px;
 }
-.l-side-bar a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-.l-side-bar a:active {
-  color: #03a4ea;
-}
-.l-side-bar .sideBar-about-me {
+.sideBar .sideBar_intro {
   margin-top: 0px;
   margin-bottom: 5px;
 }
-.l-side-bar .l-sidebar-title {
+.sideBar .sideBar_title {
   margin-top: 0px;
   margin-bottom: 5px;
 }
-.l-side-bar li + li {
+.sideBar li + li {
   margin-left: 10px;
 }
-.l-side-bar ul {
+.sideBar ul {
   list-style: none;
 }
-.l-side-bar .search-blog {
+.sideBar .sideBar_search {
   margin-top: 10px;
 }
-.l-side-bar .search-blog input {
+.sideBar .sideBar_search input {
   height: 34px;
+  float: left;
   padding-left: 10px;
   border-radius: 8px 0 0 8px;
   border: 1px solid #ccc;
   outline: none;
 }
-.l-side-bar .search-blog button {
+.sideBar .sideBar_search button {
   height: 34px;
   padding: 0 10px;
   background: #fff;
@@ -353,35 +348,42 @@ footer {
   background: #051a37;
 }
 
-.l-blog {
+.blog {
   position: relative;
   margin-bottom: 50px;
   padding-bottom: 50px;
   border-bottom: 2px solid #ccc;
 }
-.l-blog .l-blog-date-posted {
+.blog .blog_date_posted {
   position: absolute;
   top: 0;
   right: 0;
 }
-.l-blog .breadcrumb {
+.blog .breadcrumb {
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
 }
-.l-blog .breadcrumb li {
+.blog .breadcrumb li {
   display: inline-block;
 }
-.l-blog .l-blog-title {
+.blog .blog_title {
   text-align: center;
   padding-bottom: 50px;
   margin-bottom: 30px;
   border-bottom: 2px dashed #ccc;
 }
-.l-blog .l-blog-category {
+.blog .blog_picture {
+  width: 100%;
+  height: 350px;
+}
+.blog .blog_content_links {
+  color: #ea6c03;
+}
+.blog .blog_category {
   margin-top: 20px;
 }
-.l-blog .l-blog-category p {
+.blog .blog_category p {
   margin: 0px;
 }
 
@@ -398,39 +400,47 @@ footer {
   font-size: 1.5rem;
 }
 
-.large-btn {
+.btn_large {
   width: 300px;
   font-size: 1.802rem;
 }
 
-.red-button {
+.btn_red {
   background: #ea0303;
 }
 
-.blue-button {
+.btn_blue {
   background: #03a4ea;
 }
 
-.orange-button {
+.btn_orange {
   background: #ea6c03;
 }
 
-.green-button {
+.btn_green {
   background: #03ea06;
 }
 
-.red-button:hover {
+.btn_red:hover {
   background: #fd6868;
+  color: #EDEDED;
+  text-decoration: none;
 }
 
-.blue-button:hover {
+.btn_blue:hover {
   background: #68d0fd;
+  color: #EDEDED;
+  text-decoration: none;
 }
 
-.orange-button:hover {
+.btn_orange:hover {
   background: #fdab68;
+  color: #EDEDED;
+  text-decoration: none;
 }
 
-.green-button:hover {
+.btn_green:hover {
   background: #68fd6b;
+  color: #EDEDED;
+  text-decoration: none;
 }

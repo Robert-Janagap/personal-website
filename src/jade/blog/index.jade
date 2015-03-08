@@ -17,12 +17,20 @@ append main-nav-links
         a(href="../contact/") Contact
 block mainContent
     main.col-9
-        .l-blog
+        .blog.clearfix
             ul.breadcrumb
                 li: a(href="") Fb
                 li: a(href="") Twitter
-            .l-blog-date-posted March 5, 2015 / Robert Janagap
-            h1.l-blog-title Blog Title || New Post
-            img(src="../assets/img/image_1.jpg").l-blog-post-picture
-            p
-                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos sunt iure officia, consectetur illo repellendus itaque aut incidunt. Voluptate error, deleniti culpa vel repudiandae doloremque velit reprehenderit placeat veniam esse, minus ab similique iusto vitae quaerat aspernatur ipsum. Nostrum?
+            .blog_date_posted
+                | March 5, 2015 /
+                a(href="about/index.html") Robert Janagap
+            h1.blog_title Blog Title || New Post
+            img(src="assets/img/image_1.jpg").blog_picture
+            p.blog_content
+              |   Lorem ipsum dolor sit amet,
+              a(href="#").blog_content_links consectetur
+              | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+            a(href="#").btn.green-button read more
+            .blog_category
+                p Category: Web Development, Design
+                p Tag: Youjizz, Fakku

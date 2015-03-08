@@ -11,7 +11,7 @@
 	text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	font-size: 1.5rem;
 }
-.large-btn{
+.btn_large{
 	width: 300px;
 	font-size: 1.802rem;
 }
@@ -23,7 +23,7 @@ $colors: (
 	"green" rgb(3, 234, 6)
 );
 @each $color in $colors{
-	.#{nth($color, 1)}-button{
+	.btn_#{nth($color, 1)}{
 		background:nth($color, 2);
 	}
 }
