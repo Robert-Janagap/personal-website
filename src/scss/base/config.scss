@@ -14,7 +14,7 @@ a{
 	font-family: 'ubuntu';
 	color:#7E7E7E;
 	&:hover{
-			color: #000;
+			color:rgb(234, 108, 3);
 			text-decoration: underline;
 	}
 	&:active{
@@ -35,6 +35,7 @@ h1{
 }
 h2{
 	font-size: 1.602rem;
+	border-bottom: 2px solid #d9e0e2;
 }
 h3{
 	font-size: 1.424rem;

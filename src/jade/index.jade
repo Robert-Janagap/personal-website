@@ -44,14 +44,23 @@ block mainContent
                 a(href="about/index.html") Robert Janagap
             h1.blog_title Blog Title || New Post
             img(src="assets/img/image_1.jpg").blog_picture
-            p.blog_content
-              |   Lorem ipsum dolor sit amet,
-              a(href="#").blog_content_links consectetur
-              | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
-            a(href="#").btn.green-button read more
+            article.blog_content
+              p
+                |   Lorem ipsum dolor sit amet,
+                a(href="#").blog_content_links consectetur
+                | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
+            a(href="#").btn.btn_green read more
             .blog_category
-                p Category: Web Development, Design
-                p Tag: Youjizz, Fakku
+                p
+                | category:
+                a(href="#")  web Development
+                | ,
+                a(href="#")  web Design
+                p
+                | tags:
+                a(href="#")  youjizz
+                | ,
+                a(href="#")  fakku
         .blog.clearfix
             ul.breadcrumb
                 li: a(href="") Fb
@@ -65,7 +74,7 @@ block mainContent
               |   Lorem ipsum dolor sit amet,
               a(href="#").blog_content_links consectetur
               | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
-            a(href="#").btn.green-button read more
+            a(href="#").btn.btn_green read more
             .blog_category
                 p Category: Web Development, Design
                 p Tag: Youjizz, Fakku

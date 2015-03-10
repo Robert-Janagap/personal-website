@@ -3,6 +3,7 @@ header{
 	height: $header-height;
 	background: $blue-darker;
 	box-shadow:$header-box-shadow;
+	border-bottom: 1px solid rgb(13, 55, 113);
 	.logo{
 		float: left;
 		margin-top: $header-logo-margin-top;
@@ -30,12 +31,19 @@ header{
 
 /** Side bar */
 .sideBar{
-border-bottom: 2px solid #ccc;//
-padding: 10px 10px 20px;
-margin-bottom: 5px;
+	section{
+		margin-bottom: 30px;
+	}
+	section+section{
+		border: 1px solid #d9e0e2;
+		border-radius: 4px;
+		padding: 10px;
+	}
 	.sideBar_intro{
 		margin-top: 0px;
 		margin-bottom: 5px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #d9e0e2;
 	}
 	.sideBar_title{
 		margin-top: 0px;
@@ -103,11 +111,15 @@ footer{
 		width: 100%;
 		height: 350px;
 		}
+	.blog_content{
+		overflow:hidden;
+	}
 	.blog_content_links{
-		color:rgb(234, 108, 3);
+		//color:rgb(234, 108, 3);
 	}
 	.blog_category{
 		margin-top: $blog-category-margin-top;
+		text-transform: capitalize;
 		p{
 			margin:$blog-category-p-margin;
 		}

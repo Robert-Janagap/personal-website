@@ -21,7 +21,7 @@ a {
   color: #7E7E7E;
 }
 a:hover {
-  color: #000;
+  color: #ea6c03;
   text-decoration: underline;
 }
 a:active {
@@ -45,6 +45,7 @@ h1 {
 
 h2 {
   font-size: 1.602rem;
+  border-bottom: 2px solid #d9e0e2;
 }
 
 h3 {
@@ -277,7 +278,8 @@ header {
   width: 100%;
   height: 80px;
   background: #051a37;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #0d3771;
 }
 header .logo {
   float: left;
@@ -302,14 +304,19 @@ header a:hover {
 }
 
 /** Side bar */
-.sideBar {
-  border-bottom: 2px solid #ccc;
-  padding: 10px 10px 20px;
-  margin-bottom: 5px;
+.sideBar section {
+  margin-bottom: 30px;
+}
+.sideBar section + section {
+  border: 1px solid #d9e0e2;
+  border-radius: 4px;
+  padding: 10px;
 }
 .sideBar .sideBar_intro {
   margin-top: 0px;
   margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d9e0e2;
 }
 .sideBar .sideBar_title {
   margin-top: 0px;
@@ -377,11 +384,12 @@ footer {
   width: 100%;
   height: 350px;
 }
-.blog .blog_content_links {
-  color: #ea6c03;
+.blog .blog_content {
+  overflow: hidden;
 }
 .blog .blog_category {
   margin-top: 20px;
+  text-transform: capitalize;
 }
 .blog .blog_category p {
   margin: 0px;
@@ -390,14 +398,15 @@ footer {
 .btn {
   display: block;
   padding: 10px;
-  width: 134px;
+  width: 150px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
   color: #fff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: 1.5rem;
+  font-size: 1.266rem;
+  text-transform: capitalize;
 }
 
 .btn_large {
