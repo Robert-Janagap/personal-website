@@ -8,23 +8,75 @@ $h5-font-size: 1.125rem;
 $h6-font-size: 1rem;
 
 /** Header */
-$header-height: 80px;
-$header-logo-margin-top: 18px;
-$header-nav-margin-top: 30px;
-$header-nav-menu-margin-left: 40px;
-$header-box-shadow:	 0 0 5px rgba(0,0,0,0.4);
+$header--height: 80px;
+$header--box-shadow: 0 0 5px rgba(0,0,0,0.4);
+$header--border-bottom: 1px solid rgb(200, 200, 200);
+//logo
+$header_logo--margin-top: 18px;
+//navigation
+$header_nav--margin-top: 30px;
+$header_navMenu--margin-left: 40px;
+$header_navMenu--display: inline-block;
+$header_navlinks--hover-color: #EDEDED;
+
 /** banner */
+
+/** sideBar */
+$sideBar_section--margin-bottom: 30px;
+$sideBar_section--border: 1px solid #d9e0e2;
+$sideBar_section--border-radius: 4px;
+$sideBar_section--padding: 10px;
+//intro
+$sideBar_intro--margin-top: 0px;
+$sideBar_intro--margin-bottom: 5px;
+$sideBar_intro--padding-bottom: 5px;
+$sideBar_intro--border-bottom: 2px solid #d9e0e2;
+//title
+$sideBar_title--margin-top: 0px;
+$sideBar_title--margin-bottom: 5px;
+//links
+$sideBar_linksIndent--margin-left: 10px;
+//search
+$sideBar_search--margin-top: 10px;
+$sideBar_searchInput--height:34px;
+$sideBar_search--float: left;
+$sideBar_search--padding-left: 10px;
+$sideBar_search--border-radius: 8px 0 0 8px;
+$sideBar_search--border: 1px solid #d9e0e2;
+$sideBar_search--outline: none;
+//button
 
 /** main content */
 $mainContent-text-align: center;
-$list-blog-title-padding-bottom: 50px;
-$list-blog-title-margin-bottom: 30px;
-$list-blog-title-border-bottom: 2px dashed #ccc;
-$list-new-blog-padding-bottom: 50px;
-$list-new-blog-border-bottom: 2px solid #ccc;
-$blog-category-margin-top:20px;
-$blog-category-p-margin: 0px;
+//blog
+$blog--margin-bottom: 50px;
+$blog--padding-bottom: 50px;
+$blog--border-bottom: 2px solid #d9e0e2;
+$blog--position: relative;
+//date
+$blog_date--position: absolute;
+$blog_date--top: 0;
+$blog_date--right: 0;
+//breadcrumb
+$blog_breadcrumbLinks--display: inline-block;
+//title
+$blog_title--padding: 35px 0;
+$blog_title--margin-bottom: 30px;
+$blog_title--border-bottom: 2px dashed #d9e0e2;
+//picture
+$blog_picture--width: 100%;
+$blog_picture--height: 350px;
+//content
+$blog_content--overflow: hidden;
+$blog_contentLinks--color: #000;
+$blog_contentLinks--text-decoration: underline;
+$blog_contentLinks--text-transform: uppercase;
 
+//category
+$blog_category--margin-top: 20px;
+$blog_categoryPar--margin: 5px;
+$blog_category--text-transform: capitalize;
+/** footer */
 //main color:
 $white : #f2f2f2;
 $blue-dark : #37465d;
