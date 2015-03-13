@@ -8,13 +8,20 @@ append head-link
 append logo
     a(href='../')
         img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
-append main-nav-links
-    li
-        a(href="../about/") About
-    li
-        a(href="../blog/") Blog
-    li
-        a(href="") Contact
+block header
+    header
+        .header
+          .container.clearfix
+            .logo
+              block logo
+            nav.nav_main
+                ul.nav_main_links
+                    li
+                        a(href="../about/") About
+                    li
+                        a(href="../blog/") Blog
+                    li
+                        a(href="") Contact
 block mainContent
     main.col-9
         article.contact

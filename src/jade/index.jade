@@ -7,31 +7,32 @@ append head-link
     link(rel='stylesheet' href='assets/css/lib/normalize.css')
     link(rel='stylesheet' href='assets/css/lib/boilerplate-style.css')
     link(rel='stylesheet' href='assets/css/main.css')
-
-append logo
-    a(href="")
-        img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-
-append main-nav-links
-    li
-        a(href="about/") About
-    li
-        a(href="blog/") Blog
-    li
-        a(href="contact/") Contact
-
-block banner
-    .banner
-        .container
-            h1.tagLine_title Constant And Never-ending Improvements
-            .tagLine
-                .tagLine_picture
-                    img(src="assets/img/pw-picture.png" alt="Profile Picture")
-                    .caption Robert Y. Janagap
-                p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.
-                a(href="#").btn.btn_large.btn_blue view my portfolio
-  hr
-
+block logo
+    .logo
+        a(href="")
+            img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
+block header
+    .banner_background--image.header
+        .container.clearfix
+            .logo
+              a(href="")
+                img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
+            nav.nav_main
+                ul.nav_main_links
+                    li
+                        a(href="about/") About
+                    li
+                        a(href="blog/") Blog
+                    li
+                        a(href="contact/") Contact
+            .banner
+                h1.tagLine_title Constant And Never-ending Improvements
+                .tagLine
+                    .tagLine_picture
+                        img(src="assets/img/pw-picture.png" alt="Profile Picture")
+                        .caption Robert Y. Janagap
+                    p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.
+                    a(href="#").btn.btn_large.btn_blue view my portfolio
 block mainContent
     main.col-9
         h2 New Blogs:

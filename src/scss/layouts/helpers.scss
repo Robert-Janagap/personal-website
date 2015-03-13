@@ -1,13 +1,11 @@
-//@import '../base/variables';
-header{
-	width: $full-width;
-	height: $header--height;
-	background: $blue-darker;
+.header{
 	box-shadow:$header--box-shadow;
 	border-bottom: $header--border-bottom;
+	background: $blue-darker;
 	.logo{
 		float: left;
 		margin-top: $header_logo--margin-top;
+		margin-bottom: $header_logo--margin-bottom;
 	}
 	.nav_main{
 		float: right;
@@ -23,52 +21,10 @@ header{
 		}
 	}
 	a{
+		color: #fff;
 		&:hover{
 			color:$header_navlinks--hover-color;
 			text-decoration: none;
-		}
-	}
-}
-
-//blog module style
-.blog{
-	position: $blog--position;
-	margin-bottom: $blog--margin-bottom;
-	padding-bottom: $blog--padding-bottom;
-	border-bottom: $blog--border-bottom;
-	&_date_posted{
-		position: $blog_date--position;
-		top: $blog_date--top;
-		right: $blog_date--right;
-	}
-	.breadcrumb{
-		li{
-			display: $blog_breadcrumbLinks--display;
-		}
-	}
-	&_title{
-		text-align: center;
-		padding: $blog_title--padding;
-		margin-bottom: $blog_title--margin-bottom;
-		border-bottom: $blog_title--border-bottom;
-	}
-	&_picture{
-		width: $blog_picture--width;
-		height: $blog_picture--height;
-		}
-	&_content{
-		overflow:$blog_content--overflow;
-		&_links{
-			color: $blog_contentLinks--color;
-			text-decoration: $blog_contentLinks--text-decoration;
-			text-transform: $blog_contentLinks--text-transform;
-		}
-	}
-	&_category{
-		margin-top: $blog_category--margin-top;
-		text-transform: $blog_category--text-transform;
-		p{
-			margin:$blog_categoryPar--margin;
 		}
 	}
 }
@@ -84,8 +40,6 @@ header{
 		padding: $sideBar_section--padding;
 	}
 	&_intro{
-		margin-top: $sideBar_intro--margin-top;
-		margin-bottom: $sideBar_intro--margin-top;
 		padding-bottom: $sideBar_intro--padding-bottom;
 		border-bottom: $sideBar_intro--border-bottom;
 	}
@@ -104,22 +58,27 @@ header{
 			padding-left: $sideBar_search--padding-left;
 			border-radius: $sideBar_search--border-radius;
 			border: $sideBar_search--border;
+			border-right: none;
 			outline: $sideBar_search--outline;
 		}
 		button{
 			height: 34px;
 			padding: 0 10px;
-			background: #fff;
-			border: 1px solid #ccc;
+			background: transparent;
+			border: 1px solid #d9e0e2;
 			border-radius: 0 8px 8px 0;
+			&:hover{
+				border-color: $outline--color;
+			}
 		}
 	}
 }
 
 /** footer */
 footer{
+	color: #fff;
 	padding: 50px 0;
-	border-top: 2px solid #ccc;
+	border-top: 2px solid rgb(200, 200, 200);
 	text-align: center;
 	background: $blue-darker;
 }
