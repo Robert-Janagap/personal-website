@@ -1,0 +1,29 @@
+.contact-form{
+	td{
+		padding-bottom: 15px;
+		input{
+			outline: none;
+			border:none;
+			border-bottom: 1px solid #d9e0e2;
+			letter-spacing: 1px;
+			&:focus{
+				border-bottom: 1px solid $outline--color;
+			}
+		}
+		input[type="submit"]{
+				background: #fff;
+				border: 1px solid #d9e0e2;
+				border-radius: 5px;
+				padding: 10px 10px;
+				box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+		}
+		textarea{
+			resize: none;
+			outline: none;
+			border: 1px solid #d9e0e2;
+			&:focus{
+				border: 1px solid $outline--color;
+			}
+		}
+	}
+}

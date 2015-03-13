@@ -1,0 +1,8 @@
+.project_list {
+	&_items{
+		height: 200px;
+		list-style-type: none;
+		border:2px solid #d9e0e2;
+		box-shadow: $box_shadow--color;
+	}
+}

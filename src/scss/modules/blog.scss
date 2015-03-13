@@ -1,0 +1,41 @@
+.blog{
+	position: $blog--position;
+	margin-bottom: $blog--margin-bottom;
+	padding-bottom: $blog--padding-bottom;
+	border-bottom: $blog--border-bottom;
+	&_date_posted{
+		position: $blog_date--position;
+		top: $blog_date--top;
+		right: $blog_date--right;
+	}
+	.breadcrumb{
+		li{
+			display: $blog_breadcrumbLinks--display;
+		}
+	}
+	&_title{
+		text-align: center;
+		padding: $blog_title--padding;
+		margin-bottom: $blog_title--margin-bottom;
+		border-bottom: $blog_title--border-bottom;
+	}
+	&_picture{
+		width: $blog_picture--width;
+		height: $blog_picture--height;
+		}
+	&_content{
+		overflow:$blog_content--overflow;
+		&_links{
+			color: $blog_contentLinks--color;
+			text-decoration: $blog_contentLinks--text-decoration;
+			text-transform: $blog_contentLinks--text-transform;
+		}
+	}
+	&_category{
+		margin-top: $blog_category--margin-top;
+		text-transform: $blog_category--text-transform;
+		p{
+			margin:$blog_categoryPar--margin;
+		}
+	}
+}
