@@ -7,24 +7,22 @@
 		margin-top: $header_logo--margin-top;
 		margin-bottom: $header_logo--margin-bottom;
 	}
-	.nav_main{
+	&_nav{
 		float: right;
-		&_links{
-			padding: 0;
-			margin: 0;
-			margin-top: $header_nav--margin-top;
-		}
-		li{
-			display: $header_navMenu--display;
-			margin-left: $header_navMenu--margin-left;
-			font-size: $h3-font-size;
-		}
 	}
-	a{
-		color: #fff;
-		&:hover{
-			color:$header_navlinks--hover-color;
-			text-decoration: none;
+	&_list{
+		margin-top: $header_nav--margin-top;
+	}
+	&_items{
+		display: $header_navMenu--display;
+		margin-left: $header_navMenu--margin-left;
+		font-size: $h3-font-size;
+		&--link{
+			color: $header_navlinks--color;
+			&:hover{
+				color:$header_navlinks--hover-color;
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -76,7 +74,7 @@
 
 /** footer */
 footer{
-	color: #fff;
+	color: $header_navlinks--color;
 	padding: 50px 0;
 	border-top: 2px solid rgb(200, 200, 200);
 	text-align: center;

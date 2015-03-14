@@ -9,22 +9,21 @@ append logo
     a(href='../')
         img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
 block header
-    header
-        .header
-          .container.clearfix
+    header.header.clearfix
+        .container
             .logo
-              block logo
-            nav.nav_main
-                ul.nav_main_links
-                    li
-                        a(href="../about/") About
-                    li
-                        a(href="") Blog
-                    li
-                        a(href="../contact/") Contact
+                block logo
+            nav.header_nav
+                ul.header_list
+                    li.header_items
+                        a(href="../about/").header_items--link About
+                    li.header_items
+                        a(href="").header_items--link Blog
+                    li.header_items
+                        a(href="../blog/").header_items--link Contact
 block mainContent
     main.col-9
-        .blog.clearfix
+        section.blog.clearfix
             ul.breadcrumb
                 li: a(href="") Fb
                 li: a(href="") Twitter

@@ -68,11 +68,6 @@ h6 {
   font-size: 1rem;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
 /**
  * lato for content
  * oswald for title
@@ -212,23 +207,21 @@ ul {
   margin-top: 18px;
   margin-bottom: 10px;
 }
-.header .nav_main {
+.header_nav {
   float: right;
 }
-.header .nav_main_links {
-  padding: 0;
-  margin: 0;
+.header_list {
   margin-top: 30px;
 }
-.header .nav_main li {
+.header_items {
   display: inline-block;
   margin-left: 40px;
   font-size: 1.424rem;
 }
-.header a {
-  color: #fff;
+.header_items--link {
+  color: #c8c8c8;
 }
-.header a:hover {
+.header_items--link:hover {
   color: #EDEDED;
   text-decoration: none;
 }
@@ -278,7 +271,7 @@ ul {
 
 /** footer */
 footer {
-  color: #fff;
+  color: #c8c8c8;
   padding: 50px 0;
   border-top: 2px solid #c8c8c8;
   text-align: center;

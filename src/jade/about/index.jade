@@ -12,27 +12,26 @@ append logo
     a(href="../")
         img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
 block header
-    header
-        .header
-          .container.clearfix
+    header.header.clearfix
+        .container
             .logo
-              block logo
-            nav.nav_main
-                ul.nav_main_links
-                    li
-                        a(href="") About
-                    li
-                        a(href="../blog/") Blog
-                    li
-                        a(href="../contact/") Contact
-
+                block logo
+            nav.header_nav
+                ul.header_list
+                    li.header_items
+                        a(href="").header_items--link About
+                    li.header_items
+                        a(href="../blog/").header_items--link Blog
+                    li.header_items
+                        a(href="../contact/").header_items--link Contact
 block mainContent
     main.col-9
-        .clearfix
+        article.clearfix
             img(src="../assets/img/logo.png" alt="My Picture" style="min-height: 200px; width: 100%;")
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, incidunt maxime atque totam cupiditate aperiam eos. Voluptatum excepturi quae quo animi nulla. Aliquid corrupti eius quis itaque amet nam aspernatur!
-
+            p
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, incidunt maxime atque totam cupiditate aperiam eos. Voluptatum excepturi quae quo animi nulla. Aliquid corrupti eius quis itaque amet nam aspernatur!
                 |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat repudiandae placeat, ipsam quae ullam assumenda quidem dolorum suscipit totam laudantium minus optio, tempora molestias odit, architecto corporis sit similique hic aut odio itaque non provident modi laboriosam! Sint nihil voluptatum aspernatur aperiam eveniet consequuntur quos suscipit quae, perspiciatis, ut, at ipsum doloremque veritatis dolores minima. Harum, voluptatem iste. Molestiae veniam sint sapiente illum ad labore voluptatem, dolorem ex odio aliquid. Quo cupiditate dolorem error laborum quam optio molestiae mollitia nulla ab consequatur quisquam at laudantium dolore maxime deserunt ad repudiandae velit neque voluptas, quos, temporibus. Maxime distinctio laudantium aut repudiandae.
+            p
                 |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem accusamus deleniti fuga, culpa, accusantium vitae corporis vel obcaecati modi. Adipisci mollitia aliquam quis deserunt molestiae, ipsum voluptates quia porro expedita?
         .small-space
         .skills.clearfix
