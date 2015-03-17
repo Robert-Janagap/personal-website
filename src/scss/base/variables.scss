@@ -6,32 +6,33 @@ $h3-font-size: 1.424rem;
 $h4-font-size: 1.266rem;
 $h5-font-size: 1.125rem;
 $h6-font-size: 1rem;
+/** Colors */
 //main color:
 $white : #f2f2f2;
 $blue-dark : #37465d;
 $blue-darker : #051a37;
 $green-dark : #9dc02e;
 $green-darker : #779324;
-
 //outline color
 $outline--color: #59C9EF;
 //box-shadow
 $box_shadow--color: 1px 1px 4px rgba(0,0,0,0.4);
+
 /** Header */
 $header--box-shadow: 0 0 5px rgba(0,0,0,0.4);
 $header--border-bottom: 1px solid rgb(200, 200, 200);
 //logo
-$header_logo--margin-top: 18px;
-$header_logo--margin-bottom: 10px;
+$header_logo--margin-top: 1.125rem;
+$header_logo--margin-bottom: .625rem;
 //navigation
-$header_nav--margin-top: 30px;
-$header_navMenu--margin-left: 40px;
+$header_nav--margin-top: 1.875rem;
+$header_navMenu--margin-left: 2.5rem;
 $header_navMenu--display: inline-block;
 $header_navlinks--color: #c8c8c8;
 $header_navlinks--hover-color: #EDEDED;
 
 /** banner */
-$banner--height: 80vh;
+$banner--height: 70vh;
 $banner--image: url("../img/banner_bg.jpg");
 
 /** sideBar */

@@ -1,4 +1,5 @@
 /** Global variable */
+/** Colors */
 /** Header */
 /** banner */
 /** sideBar */
@@ -38,34 +39,34 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: .94rem;
   font-family: 'oswald';
   font-weight: normal;
 }
 
 h1 {
-  font-size: 1.802rem;
+  font-size: 1.802em;
 }
 
 h2 {
-  font-size: 1.602rem;
+  font-size: 1.602em;
   border-bottom: 2px solid #d9e0e2;
 }
 
 h3 {
-  font-size: 1.424rem;
+  font-size: 1.424em;
 }
 
 h4 {
-  font-size: 1.266rem;
+  font-size: 1.266em;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 /**
@@ -95,11 +96,6 @@ h6 {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 .col-1 {
@@ -202,20 +198,7 @@ h6 {
   border-bottom: 1px solid #c8c8c8;
   background: #051a37;
 }
-.header .logo {
-  float: left;
-  margin-top: 18px;
-  margin-bottom: 10px;
-}
-.header_nav {
-  float: right;
-}
-.header_list {
-  margin-top: 30px;
-}
 .header_items {
-  display: inline-block;
-  margin-left: 40px;
   font-size: 1.424rem;
 }
 .header_items--link {
@@ -226,41 +209,20 @@ h6 {
   text-decoration: none;
 }
 
-/** Side bar */
-.sideBar section {
-  margin-bottom: 30px;
-}
 .sideBar section + section {
   border: 1px solid #d9e0e2;
   border-radius: 4px;
-  padding: 10px;
 }
 .sideBar_intro {
-  padding-bottom: 5px;
   border-bottom: 2px solid #d9e0e2;
 }
-.sideBar_title {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.sideBar li + li {
-  margin-left: 10px;
-}
-.sideBar_search {
-  margin-top: 10px;
-}
 .sideBar_search input {
-  height: 34px;
-  float: left;
-  padding-left: 10px;
   border-radius: 8px 0 0 8px;
   border: 1px solid #d9e0e2;
   border-right: none;
   outline: none;
 }
 .sideBar_search button {
-  height: 34px;
-  padding: 0 10px;
   background: transparent;
   border: 1px solid #d9e0e2;
   border-radius: 0 8px 8px 0;
@@ -269,17 +231,8 @@ h6 {
   border-color: #59C9EF;
 }
 
-/** footer */
-footer {
-  color: #c8c8c8;
-  padding: 50px 0;
-  border-top: 2px solid #c8c8c8;
-  text-align: center;
-  background: #051a37;
-}
-
 .banner_background--image {
-  height: 80vh;
+  height: 70vh;
   background-image: url("../img/banner_bg.jpg");
   background-size: cover;
 }
@@ -292,8 +245,8 @@ footer {
   text-align: center;
 }
 .banner .tagLine_title {
-  margin: 50px 0;
-  font-size: 2.8rem;
+  margin: 3.125rem 0;
+  font-size: 2.8em;
 }
 .banner .btn_large {
   margin: 0 auto;
@@ -341,7 +294,7 @@ footer {
 
 .btn {
   display: block;
-  padding: 10px;
+  padding: .625rem;
   width: 150px;
   text-align: center;
   border-radius: 4px;
@@ -462,4 +415,89 @@ footer {
   background: #68fd6b;
   color: #EDEDED;
   text-decoration: none;
+}
+
+.is-transparent {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.header .logo {
+  float: left;
+  margin-top: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+.header_nav {
+  float: right;
+}
+.header_list {
+  margin-top: 1.875rem;
+}
+.header_items {
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+/** Side bar */
+.sideBar section {
+  margin-bottom: 30px;
+}
+.sideBar section + section {
+  padding: 10px;
+}
+.sideBar_intro {
+  padding-bottom: 5px;
+}
+.sideBar_title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.sideBar li + li {
+  margin-left: 10px;
+}
+.sideBar_search {
+  margin-top: 10px;
+}
+.sideBar_search input {
+  height: 34px;
+  float: left;
+  padding-left: 10px;
+}
+.sideBar_search button {
+  height: 34px;
+  padding: 0 10px;
+}
+
+/** footer */
+footer {
+  color: #c8c8c8;
+  padding: 50px 0;
+  border-top: 2px solid #c8c8c8;
+  text-align: center;
+  background: #051a37;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    background: skyblue;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    background: lime;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1079px) {
+  body {
+    background: red;
+  }
+}
+@media screen and (min-width: 1080px) {
+  body {
+    background: gray;
+  }
 }

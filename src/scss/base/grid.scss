@@ -6,7 +6,9 @@ $susy:(
 	gutter-position: split,
 );
 .container{
-	@include container(90%);
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 @for $i from 1 through 11 {
 	.col-#{$i}{

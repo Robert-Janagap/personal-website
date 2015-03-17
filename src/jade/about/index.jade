@@ -7,23 +7,22 @@ append head-link
     link(rel ='stylesheet' href='../assets/css/lib/normalize.css')
     link(rel ='stylesheet' href='../assets/css/lib/boilerplate-style.css')
     link(rel ='stylesheet' href='../assets/css/main.css')
-
+append scripts
+    script window.jQuery || document.write('<script src="../assets/js/lib/jquery-1.11.1.min.js"><\/script>')
+    script(src="../assets/js/main.js")
 append logo
     a(href="../")
         img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
-block header
-    header.header.clearfix
-        .container
-            .logo
-                block logo
-            nav.header_nav
-                ul.header_list
-                    li.header_items
-                        a(href="").header_items--link About
-                    li.header_items
-                        a(href="../blog/").header_items--link Blog
-                    li.header_items
-                        a(href="../contact/").header_items--link Contact
+append mainNav-links
+    nav.header_nav
+        ul.header_list
+            li.header_items
+                a(href="").header_items--link About
+            li.header_items
+                a(href="../blog/").header_items--link Blog
+            li.header_items
+                a(href="../contact/").header_items--link Contact
+
 block mainContent
     main.col-9
         article.clearfix

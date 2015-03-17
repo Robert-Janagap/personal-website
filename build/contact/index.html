@@ -17,17 +17,19 @@
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
       to improve your experience.
     </p><![endif]-->
-    <header class="header clearfix">
-      <div class="container">
-        <div class="logo"><a href="../"><img src="../assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
+    <header class="clearfix">
+      <div class="header">
+        <div class="container clearfix">
+          <div class="logo"><a href="../"><img src="../assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
+          </div>
+          <nav class="header_nav">
+            <ul class="header_list">
+              <li class="header_items"><a href="../about/" class="header_items--link">About</a></li>
+              <li class="header_items"><a href="../blog/" class="header_items--link">Blog</a></li>
+              <li class="header_items"><a href="" class="header_items--link">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header_nav">
-          <ul class="header_list">
-            <li class="header_items"><a href="../about/" class="header_items--link">About</a></li>
-            <li class="header_items"><a href="../blog/" class="header_items--link">Blog</a></li>
-            <li class="header_items"><a href="" class="header_items--link">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <div class="small-space"></div>
@@ -88,7 +90,7 @@
         <section>
           <ul>
             <li>
-              <div>You can follow me on this social media site.</div>
+              <h3 class="sideBar_title">Follow Me</h3>
             </li>
             <li><a href="">fb</a></li>
             <li><a href="">twitter</a></li>
@@ -123,7 +125,8 @@
         <div class="copyright">copyright 2014</div>
       </div>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/lib/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

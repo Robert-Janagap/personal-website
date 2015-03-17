@@ -1,0 +1,15 @@
+.header{
+	box-shadow:$header--box-shadow;
+	border-bottom: $header--border-bottom;
+	background: $blue-darker;
+	&_items{
+		font-size: $h3-font-size;
+		&--link{
+			color: $header_navlinks--color;
+			&:hover{
+				color:$header_navlinks--hover-color;
+				text-decoration: none;
+			}
+		}
+	}
+}

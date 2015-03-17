@@ -1,7 +1,4 @@
 .header{
-	box-shadow:$header--box-shadow;
-	border-bottom: $header--border-bottom;
-	background: $blue-darker;
 	.logo{
 		float: left;
 		margin-top: $header_logo--margin-top;
@@ -16,14 +13,6 @@
 	&_items{
 		display: $header_navMenu--display;
 		margin-left: $header_navMenu--margin-left;
-		font-size: $h3-font-size;
-		&--link{
-			color: $header_navlinks--color;
-			&:hover{
-				color:$header_navlinks--hover-color;
-				text-decoration: none;
-			}
-		}
 	}
 }
 
@@ -33,13 +22,10 @@
 		margin-bottom: $sideBar_section--margin-bottom;
 	}
 	section+section{
-		border: $sideBar_section--border;
-		border-radius: $sideBar_section--border-radius;
 		padding: $sideBar_section--padding;
 	}
 	&_intro{
 		padding-bottom: $sideBar_intro--padding-bottom;
-		border-bottom: $sideBar_intro--border-bottom;
 	}
 	&_title{
 		margin-top: $sideBar_search--margin-top;
@@ -54,20 +40,10 @@
 			height: $sideBar_searchInput--height;
 			float: $sideBar_search--float;
 			padding-left: $sideBar_search--padding-left;
-			border-radius: $sideBar_search--border-radius;
-			border: $sideBar_search--border;
-			border-right: none;
-			outline: $sideBar_search--outline;
 		}
 		button{
 			height: 34px;
 			padding: 0 10px;
-			background: transparent;
-			border: 1px solid #d9e0e2;
-			border-radius: 0 8px 8px 0;
-			&:hover{
-				border-color: $outline--color;
-			}
 		}
 	}
 }

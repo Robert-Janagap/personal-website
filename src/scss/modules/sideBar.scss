@@ -1,0 +1,25 @@
+.sideBar{
+	section+section{
+		border: $sideBar_section--border;
+		border-radius: $sideBar_section--border-radius;
+	}
+	&_intro{
+		border-bottom: $sideBar_intro--border-bottom;
+	}
+	&_search{
+		input{
+			border-radius: $sideBar_search--border-radius;
+			border: $sideBar_search--border;
+			border-right: none;
+			outline: $sideBar_search--outline;
+		}
+		button{
+			background: transparent;
+			border: 1px solid #d9e0e2;
+			border-radius: 0 8px 8px 0;
+			&:hover{
+				border-color: $outline--color;
+			}
+		}
+	}
+}

@@ -7,31 +7,30 @@ append head-link
     link(rel='stylesheet' href='assets/css/lib/normalize.css')
     link(rel='stylesheet' href='assets/css/lib/boilerplate-style.css')
     link(rel='stylesheet' href='assets/css/main.css')
-block logo
+append scripts
+    script window.jQuery || document.write('<script src="assets/js/lib/jquery-1.11.1.min.js"><\/script>')
+    script(src="assets/js/main.js")
+append logo
     a(href="")
         img(src="assets/img/logo.png" alt="My Logo" style="width: 250px")
-block header
-    header
-        .banner_background--image.header
-            .container.clearfix
-                .logo
-                    block logo
-                nav.header_nav
-                    ul.header_list
-                        li.header_items
-                            a(href="about/").header_items--link About
-                        li.header_items
-                            a(href="blog/").header_items--link Blog
-                        li.header_items
-                            a(href="contact/").header_items--link Contact
-                .banner
-                    h1.tagLine_title Constant And Never-ending Improvements
-                    .tagLine
-                        .tagLine_picture
-                            img(src="assets/img/pw-picture.png" alt="Profile Picture")
-                            .caption Robert Y. Janagap
-                        p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.
-                        a(href="#").btn.btn_large.btn_blue view my portfolio
+append mainNav-links
+    nav.header_nav
+        ul.header_list
+            li.header_items
+                a(href="about/").header_items--link About
+            li.header_items
+                a(href="blog/").header_items--link Blog
+            li.header_items
+                a(href="contact/").header_items--link Contact
+block banner
+    .banner
+        h1.tagLine_title Constant And Never-ending Improvements
+        .tagLine
+            .tagLine_picture
+                img(src="assets/img/pw-picture.png" alt="Profile Picture")
+                .caption Robert Y. Janagap
+            p A student, freelancer and Front-end Developer/Designer. Living in the city of smile Bacolod city from Philippines.
+            a(href="#").btn.btn_large.btn_blue view my portfolio
 block mainContent
     main.col-9
         h2 New Blogs:
