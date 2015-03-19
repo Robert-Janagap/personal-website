@@ -1,19 +1,16 @@
 .btn{
-	display: block;
 	padding: .625rem;
-	width: 150px;
 	text-align: center;
 	border-radius: 4px;
 	text-decoration: none;
 	color: #fff;
 	box-shadow: $box_shadow--color;
 	text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-	font-size: 1.266rem;
+	font-size: $h4-font-size;
 	text-transform: capitalize;
 }
 .btn_large{
-	width: 300px;
-	font-size: 1.802rem;
+	font-size: $h1-font-size;
 }
 //buttons color
 $colors: (

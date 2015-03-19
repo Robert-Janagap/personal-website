@@ -4,16 +4,13 @@
 	background-size: cover;
 }
 .banner{
+	background: #e2e2e2; //temporary;
 	width: 100%;
-	height: 100%;
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
 	.tagLine_title{
 		margin: 3.125rem 0;
 		font-size: 2.8em;
-	}
-	.btn_large{
-		margin: 0 auto;
 	}
 }

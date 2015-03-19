@@ -1,9 +1,16 @@
 /** Global variable */
 /** Colors */
+/** end */
 /** Header */
-/** banner */
+/** end */
 /** sideBar */
+/** end */
 /** main content */
+/** banner */
+/** end */
+/** blog */
+/** end */
+/** end */
 /** footer */
 * {
   box-sizing: border-box;
@@ -199,7 +206,7 @@ h6 {
   background: #051a37;
 }
 .header_items {
-  font-size: 1.424rem;
+  font-size: 1.424em;
 }
 .header_items--link {
   color: #c8c8c8;
@@ -238,8 +245,8 @@ h6 {
 }
 
 .banner {
+  background: #e2e2e2;
   width: 100%;
-  height: 100%;
   overflow: hidden;
   color: #fff;
   text-align: center;
@@ -248,14 +255,11 @@ h6 {
   margin: 3.125rem 0;
   font-size: 2.8em;
 }
-.banner .btn_large {
-  margin: 0 auto;
-}
 
 .blog {
   position: relative;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 3.125rem;
+  padding-bottom: 1.875rem;
   border-bottom: 2px solid #d9e0e2;
 }
 .blog_date_posted {
@@ -268,8 +272,8 @@ h6 {
 }
 .blog_title {
   text-align: center;
-  padding: 35px 0;
-  margin-bottom: 30px;
+  padding: 2.187rem 0;
+  margin-bottom: 1.875rem;
   border-bottom: 2px dashed #d9e0e2;
 }
 .blog_picture {
@@ -285,7 +289,7 @@ h6 {
   text-transform: uppercase;
 }
 .blog_category {
-  margin-top: 20px;
+  margin-top: 1.875rem;
   text-transform: capitalize;
 }
 .blog_category p {
@@ -293,22 +297,19 @@ h6 {
 }
 
 .btn {
-  display: block;
   padding: .625rem;
-  width: 150px;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
   color: #fff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: 1.266rem;
+  font-size: 1.266em;
   text-transform: capitalize;
 }
 
 .btn_large {
-  width: 300px;
-  font-size: 1.802rem;
+  font-size: 1.802em;
 }
 
 .btn_red {
@@ -444,32 +445,35 @@ h6 {
 
 /** Side bar */
 .sideBar section {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .sideBar section + section {
-  padding: 10px;
+  padding: 0.625rem;
 }
 .sideBar_intro {
-  padding-bottom: 5px;
+  padding-bottom: 0.312rem;
 }
 .sideBar_title {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1.875rem;
+  margin-bottom: 0.312rem;
 }
 .sideBar li + li {
-  margin-left: 10px;
+  margin-left: 0.75rem;
 }
 .sideBar_search {
-  margin-top: 10px;
+  margin-top: 1.875rem;
 }
 .sideBar_search input {
+  width: 70%;
   height: 34px;
   float: left;
-  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 .sideBar_search button {
+  width: 15%;
+  float: left;
   height: 34px;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 /** footer */

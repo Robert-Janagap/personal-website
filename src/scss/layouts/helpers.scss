@@ -37,13 +37,16 @@
 	&_search{
 		margin-top: $sideBar_search--margin-top;
 		input{
+			width: 70%;
 			height: $sideBar_searchInput--height;
 			float: $sideBar_search--float;
 			padding-left: $sideBar_search--padding-left;
 		}
 		button{
+			width: 15%;
+			float:left;
 			height: 34px;
-			padding: 0 10px;
+			padding: 0 0.625rem;
 		}
 	}
 }
