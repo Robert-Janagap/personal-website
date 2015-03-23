@@ -54,8 +54,7 @@ gulp.task('sass', function(){
 		.pipe(autoprefix())
 		.pipe(gulp.dest('./build/assets/css/'));
 });
-
-/*Framework*/
+/*compass*/
 gulp.task('compass',function(){
 	var src='./src/scss/*.scss';
 	gulp.src(src)
@@ -69,6 +68,8 @@ gulp.task('compass',function(){
 	  .pipe(autoprefix())
 	  .pipe(gulp.dest('./build/assets/css/'))
 });
+
+/** jsHint */
 
 /** watch task*/
 gulp.task('watch', function(){

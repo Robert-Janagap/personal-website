@@ -191,7 +191,11 @@ textarea {
 .container:after,.clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
-    overflow: hidden;/*My addition */ 
+    /*My addition */
+    overflow: hidden;
+    line-height: 0;
+    width: 0;
+    height: 0;
 }
 .container:after,.clearfix:after {
     clear: both;

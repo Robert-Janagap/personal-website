@@ -82,22 +82,25 @@ h6 {
  * ubuntu for nav
  */
 @font-face {
-  font-family: 'lato';
-  src: url("../fonts/Lato.ttf") format("truetype");
+  font-family: "lato";
+  src: url("../fonts/lato/Lato.eot");
+  src: url("../fonts/lato/Lato.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato.woff2") format("woff2"), url("../fonts/lato/Lato.woff") format("woff"), url("../fonts/lato/Lato.ttf") format("truetype");
   font-weight: normal;
-  font-size: 100%;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'oswald';
-  src: url("../fonts/Oswald.ttf") format("truetype");
+  font-family: "oswald";
+  src: url("../fonts/oswald/Oswald.eot");
+  src: url("../fonts/oswald/Oswald.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/Oswald.woff2") format("woff2"), url("../fonts/oswald/Oswald.woff") format("woff"), url("../fonts/oswald/Oswald.ttf") format("truetype");
   font-weight: normal;
-  font-size: 100%;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'ubuntu';
-  src: url("../fonts/Ubuntu.ttf") format("truetype");
+  font-family: "ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu.eot");
+  src: url("../fonts/ubuntu/Ubuntu.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/Ubuntu.woff2") format("woff2"), url("../fonts/ubuntu/Ubuntu.woff") format("woff"), url("../fonts/ubuntu/Ubuntu.ttf") format("truetype");
   font-weight: normal;
-  font-size: 100%;
+  font-style: normal;
 }
 .container {
   max-width: 90%;
@@ -246,8 +249,6 @@ h6 {
 
 .banner {
   background: #e2e2e2;
-  width: 100%;
-  overflow: hidden;
   color: #fff;
   text-align: center;
 }
@@ -309,7 +310,7 @@ h6 {
 }
 
 .btn_large {
-  font-size: 1.802em;
+  font-size: 1.424em;
 }
 
 .btn_red {

@@ -1,0 +1,12 @@
+@mixin font_face($font_name, $url){
+	@font-face{
+		font-family: '#{$font_name}';
+	    src: url('#{$url}.eot');
+	    src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+	         url('#{$url}.woff2') format('woff2'),
+	         url('#{$url}.woff') format('woff'),
+	         url('#{$url}.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+}
