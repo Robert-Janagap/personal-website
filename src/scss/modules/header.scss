@@ -1,4 +1,6 @@
 .header{
+	position: relative;
+	z-index: 5;
 	box-shadow:$header--box-shadow;
 	border-bottom: $header--border-bottom;
 	background: $blue-darker;

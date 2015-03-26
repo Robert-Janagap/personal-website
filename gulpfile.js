@@ -1,30 +1,32 @@
 var gulp       = require('gulp');
 
 /*gulp packages*/
-
-/** local server */
+//local server
 var connect    = require('gulp-connect');
 
-/** preprocessor */
+//preprocessor
 var jade       = require('gulp-jade'),
 sass           = require('gulp-sass');
 
-/** Framework */
+//error linting
+var jshint = require('gulp-jshint'),
+	stylish = require('jshint-stylish');
+
+//Framework
 var	compass    = require('gulp-compass');
 
-/** utilities */
+//utilities
 var changed    = require('gulp-changed'),
 autoprefix     = require('gulp-autoprefixer'),
 watch          = require('gulp-watch'),
-rename         = require('gulp-rename');
+rename         = require('gulp-rename'),
+plumber = require('gulp-plumber');
 
-/** Compiler */
+//Compiler
 var minifyHTML = require('gulp-minify-html'),
 minifyCSS      = require('gulp-minify-css');
 
-/*
-GULP TASK
- */
+/** gulp task */
 
 /** local server */
 gulp.task('server', function(){
@@ -32,54 +34,67 @@ gulp.task('server', function(){
 		livereload: true
 	})
 });
-
 /** Preprocessor */
 //jade
 gulp.task('jade', function(){
-	var src = './src/jade/**/*.jade';
+	var src = './src/jade/**/*.jade',
+		dest = './build/';
 	gulp.src(src)
-		.pipe(changed(src))
+		.pipe(changed(dest, {extension: '.html'}))
 		.pipe(jade({
 			pretty: true
 		}))
-		.pipe(gulp.dest('./build/'));
+		.pipe(gulp.dest(dest));
 });
-
 /** sass */ //use compass for mixin and grid
 gulp.task('sass', function(){
-	var src = './src/scss/main.scss';
+	var src = './src/scss/main.scss',
+		dest = './build/assets/css/';
 	gulp.src(src)
-		.pipe(changed(src))
+		.pipe(changed(dest))
 		.pipe(sass())
 		.pipe(autoprefix())
-		.pipe(gulp.dest('./build/assets/css/'));
-});
-/*compass*/
-gulp.task('compass',function(){
-	var src='./src/scss/*.scss';
-	gulp.src(src)
-	  .pipe(changed(src))
-	  .pipe(compass({
-	  	config_file: './config.rb',
-	  	css: 'build/assets/css',
-	  	sass: 'src/scss',
-	  	require: ['susy', 'breakpoint']
-	  }))
-	  .pipe(autoprefix())
-	  .pipe(gulp.dest('./build/assets/css/'))
+		.pipe(gulp.dest(dest));
 });
 
-/** jsHint */
+/** error linting */
+//jshint
+gulp.task('jshint', function(){
+	var src = 'src/js/*.js';
+	gulp.src(src)
+		.pipe(changed('build/assets/js/**/*.js'))
+		.pipe(jshint())
+		.pipe(jshint.reporter(stylish));
+});
+
+/** frameworks */
+//compass
+gulp.task('compass',function(){
+	var src='./src/scss/*.scss',
+		dest = './build/assets/css/';
+	gulp.src(src)
+		.pipe(changed(dest))
+		.pipe(plumber())
+		.pipe(compass({
+			config_file: './config.rb',
+			css: 'build/assets/css',
+			sass: 'src/scss',
+			require: ['susy', 'breakpoint']
+		}))
+		.pipe(autoprefix())
+		.pipe(gulp.dest(dest))
+});
 
 /** watch task*/
 gulp.task('watch', function(){
 	gulp.watch('src/jade/**/*.jade',['jade'])
 	gulp.watch('src/scss/**/*.scss',['compass'])
+	gulp.watch('src/js/*.js',['jshint'])
 });
 
 /** livereload */
 gulp.task('livereload', function(){
-	watch(['./build/index.html', './build/assets/css/main.css'])
+	watch(['./build/**/*.html', './build/assets/css/main.css','./build/assets/js/*.js'])
 		.pipe(connect.reload());
 });
 

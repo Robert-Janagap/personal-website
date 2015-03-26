@@ -204,6 +204,8 @@ h6 {
 }
 
 .header {
+  position: relative;
+  z-index: 5;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid #c8c8c8;
   background: #051a37;
@@ -455,7 +457,6 @@ h6 {
   padding-bottom: 0.312rem;
 }
 .sideBar_title {
-  margin-top: 1.875rem;
   margin-bottom: 0.312rem;
 }
 .sideBar li + li {
@@ -498,7 +499,7 @@ footer {
 }
 @media screen and (min-width: 1024px) and (max-width: 1079px) {
   body {
-    background: red;
+    background: #821717;
   }
 }
 @media screen and (min-width: 1080px) {
