@@ -1,3 +1,3 @@
 function test(){
-	console.log(tae);
+	console.log("test if the ssh key is running");
 }
