@@ -487,17 +487,42 @@ footer {
   background: #051a37;
 }
 
+@media screen and (min-width: 240px) {
+  body {
+    background: darkorange;
+  }
+}
 @media screen and (min-width: 320px) {
+  body {
+    background: green;
+  }
+}
+@media screen and (min-width: 480px) {
+  body {
+    background: #00ff2b;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    background: lightgreen;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 767px) {
+  body {
+    background: #002bff;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: #66b2ff;
+  }
+}
+@media screen and (min-width: 800px) {
   body {
     background: skyblue;
   }
 }
-@media screen and (min-width: 720px) {
-  body {
-    background: lime;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1079px) {
+@media screen and (min-width: 1024px) {
   body {
     background: #821717;
   }
