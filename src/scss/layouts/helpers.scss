@@ -1,60 +1,73 @@
 .header{
-	.logo{
-		float: left;
-		margin-top: $header_logo--margin-top;
-		margin-bottom: $header_logo--margin-bottom;
-	}
-	&_nav{
-		float: right;
-	}
-	&_list{
-		margin-top: $header_nav--margin-top;
-	}
-	&_items{
-		display: $header_navMenu--display;
-		margin-left: $header_navMenu--margin-left;
-	}
+    position: relative;
+    z-index: 5;
+    height: 80px;
+    box-shadow:$header--box-shadow;
+    border-bottom: $header--border-bottom;
+    background: $blue-darker;
+    .logo{
+        float: left;
+        line-height: 80px;
+    }
+    &_nav{
+        float: right;
+    }
+    &_list{
+        line-height: 80px;
+    }
+    &_items{
+        display: $header_navMenu--display;
+        margin-left: $header_navMenu--margin-left;
+        &--link{
+            font-size: $h3-font-size;
+            color: $header_navlinks--color;
+            &:hover{
+                color:$header_navlinks--hover-color;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 /** Side bar */
 .sideBar{
-	section{
-		margin-bottom: $sideBar_section--margin-bottom;
-	}
-	section+section{
-		padding: $sideBar_section--padding;
-	}
-	&_intro{
-		padding-bottom: $sideBar_intro--padding-bottom;
-	}
-	&_title{
-		margin-bottom: $sideBar_title--margin-bottom;
-	}
-	li + li{
-		margin-left: $sideBar_linksIndent--margin-left;
-	}
-	&_search{
-		margin-top: $sideBar_search--margin-top;
-		input{
-			width: 70%;
-			height: $sideBar_searchInput--height;
-			float: $sideBar_search--float;
-			padding-left: $sideBar_search--padding-left;
-		}
-		button{
-			width: 15%;
-			float:left;
-			height: 34px;
-			padding: 0 0.625rem;
-		}
-	}
+    section{
+        margin-bottom: $sideBar_section--margin-bottom;
+    }
+    section+section{
+        padding: $sideBar_section--padding;
+    }
+    &_intro{
+        padding-bottom: $sideBar_intro--padding-bottom;
+    }
+    &_title{
+        margin-bottom: $sideBar_title--margin-bottom;
+    }
+    li + li{
+        margin-left: $sideBar_linksIndent--margin-left;
+    }
+    &_search{
+        margin-top: $sideBar_search--margin-top;
+        input{
+            width: 70%;
+            height: $sideBar_searchInput--height;
+            float: $sideBar_search--float;
+            padding-left: $sideBar_search--padding-left;
+        }
+        button{
+            float:left;
+            height: 34px;
+            padding: 0 0.625rem;
+            text-align: center;
+        }
+    }
 }
 
 /** footer */
 footer{
-	color: $header_navlinks--color;
-	padding: 50px 0;
-	border-top: 2px solid rgb(200, 200, 200);
-	text-align: center;
-	background: $blue-darker;
+    color: $header_navlinks--color;
+    padding: 50px 0;
+    border-top: 2px solid rgb(200, 200, 200);
+    text-align: center;
+    background: $blue-darker;
 }

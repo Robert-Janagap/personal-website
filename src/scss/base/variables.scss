@@ -23,10 +23,7 @@ $box_shadow--color: 1px 1px 4px rgba(0,0,0,0.4);
 $header--box-shadow: 0 0 5px rgba(0,0,0,0.4);
 $header--border-bottom: 1px solid rgb(200, 200, 200);
 //logo
-$header_logo--margin-top: 1.125rem;
-$header_logo--margin-bottom: .625rem;
 //navigation
-$header_nav--margin-top: 1.875rem;
 $header_navMenu--margin-left: 2.5rem;
 $header_navMenu--display: inline-block;
 $header_navlinks--color: #c8c8c8;
@@ -49,7 +46,7 @@ $sideBar_title--margin-bottom: 0.312rem;
 //links
 $sideBar_linksIndent--margin-left: .75rem;
 //search
-$sideBar_search--margin-top: 1.875rem;
+$sideBar_search--margin-top: 0.625rem;
 $sideBar_searchInput--height:34px;
 $sideBar_search--float: left;
 $sideBar_search--padding-left: 0.625rem;

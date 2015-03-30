@@ -1,5 +1,10 @@
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) and (max-width: 1023px){
 	body{
 		background: skyblue;
 	}
+	.container{
+		width: 95%;
+	}
+	.header_list{display: none;}
+	.nav_icon{display: block;}
 }

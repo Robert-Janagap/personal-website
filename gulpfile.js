@@ -1,30 +1,21 @@
 var gulp       = require('gulp');
 
 /*gulp packages*/
-//local server
-var connect    = require('gulp-connect');
-
-//preprocessor
-var jade       = require('gulp-jade'),
-sass           = require('gulp-sass');
-
-//error linting
-var jshint = require('gulp-jshint'),
-	stylish = require('jshint-stylish');
-
-//Framework
-var	compass    = require('gulp-compass');
-
-//utilities
-var changed    = require('gulp-changed'),
-autoprefix     = require('gulp-autoprefixer'),
-watch          = require('gulp-watch'),
+var autoprefix = require('gulp-autoprefixer'),
+concat         = require('gulp-concat'),
+changed        = require('gulp-changed'),
+connect        = require('gulp-connect'),
+compass        = require('gulp-compass'),
+jade           = require('gulp-jade'),
+jshint         = require('gulp-jshint'),
+minifyHTML     = require('gulp-minify-html'),
+minifyCSS      = require('gulp-minify-css'),
+plumber        = require('gulp-plumber'),
 rename         = require('gulp-rename'),
-plumber = require('gulp-plumber');
-
-//Compiler
-var minifyHTML = require('gulp-minify-html'),
-minifyCSS      = require('gulp-minify-css');
+sass           = require('gulp-sass'),
+stylish        = require('jshint-stylish'),
+watch          = require('gulp-watch'),
+uglify         = require('gulp-uglify');
 
 /** gulp task */
 
@@ -37,10 +28,11 @@ gulp.task('server', function(){
 /** Preprocessor */
 //jade
 gulp.task('jade', function(){
-	var src = './src/jade/**/*.jade',
-		dest = './build/';
+	var src = 'src/jade/**/*.jade',
+		dest = 'build/';
 	gulp.src(src)
-		.pipe(changed(dest, {extension: '.html'}))
+		.pipe(changed(dest))
+		.pipe(plumber())
 		.pipe(jade({
 			pretty: true
 		}))
@@ -48,10 +40,11 @@ gulp.task('jade', function(){
 });
 /** sass */ //use compass for mixin and grid
 gulp.task('sass', function(){
-	var src = './src/scss/main.scss',
-		dest = './build/assets/css/';
+	var src = 'src/scss/main.scss',
+		dest = 'build/assets/css/';
 	gulp.src(src)
 		.pipe(changed(dest))
+		.pipe(plumber())
 		.pipe(sass())
 		.pipe(autoprefix())
 		.pipe(gulp.dest(dest));
@@ -64,19 +57,21 @@ gulp.task('jshint', function(){
 	gulp.src(src)
 		.pipe(changed('build/assets/js/**/*.js'))
 		.pipe(jshint())
-		.pipe(jshint.reporter(stylish));
+		.pipe(jshint.reporter(stylish))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/assets/js/'));
 });
 
 /** frameworks */
 //compass
 gulp.task('compass',function(){
-	var src='./src/scss/*.scss',
-		dest = './build/assets/css/';
+	var src='src/scss/*.scss',
+		dest = 'build/assets/css/';
 	gulp.src(src)
 		.pipe(changed(dest))
 		.pipe(plumber())
 		.pipe(compass({
-			config_file: './config.rb',
+			config_file: 'config.rb',
 			css: 'build/assets/css',
 			sass: 'src/scss',
 			require: ['susy', 'breakpoint']
@@ -99,6 +94,12 @@ gulp.task('livereload', function(){
 });
 
 /** Compiler */
+gulp.task('compress',function(){
+	gulp.src('src/js/*.js')
+		.pipe(uglify())
+		.pipe(concat('main.js'))
+		.pipe(gulp.dest('build/assets/js/'))
+});
 gulp.task('minifyHTML', function(){
 	gulp.src('./build/index.html')
 		.pipe(minifyHTML())
@@ -112,4 +113,4 @@ gulp.task('minifyCSS', function(){
 });
 
 /** gulp default run */
-gulp.task('default',['server', 'watch', 'livereload']);
+gulp.task('default',['server', 'watch','livereload']);

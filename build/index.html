@@ -18,19 +18,25 @@
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
       to improve your experience.
     </p><![endif]-->
-    <header class="clearfix">
-      <div class="header">
-        <div class="container">
-          <div class="logo"><a href=""><img src="assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
-          </div>
-          <nav class="header_nav">
-            <ul class="header_list">
-              <li class="header_items"><a href="about/" class="header_items--link">About</a></li>
-              <li class="header_items"><a href="blog/" class="header_items--link">Blog</a></li>
-              <li class="header_items"><a href="contact/" class="header_items--link">Contact</a></li>
-            </ul>
-          </nav>
+    <header class="clearfix header">
+      <div class="container">
+        <nav class="header_responsive">
+          <ul class="header_responsive--nav">
+            <li class="header_responsive--items"><a href="about/" class="header_responsive--link">About</a></li>
+            <li class="header_responsive--items"><a href="blog/" class="header_responsive--link">Blog</a></li>
+            <li class="header_responsive--items"><a href="contact/" class="header_responsive--link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="logo"><a href=""><img src="assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
         </div>
+        <nav class="header_nav">
+          <ul class="header_list">
+            <li class="header_items"><a href="about/" class="header_items--link">About</a></li>
+            <li class="header_items"><a href="blog/" class="header_items--link">Blog</a></li>
+            <li class="header_items"><a href="contact/" class="header_items--link">Contact</a></li>
+          </ul>
+        </nav><a class="nav_icon">
+          <div class="fa fa-2x fa-navicon"></div></a>
       </div>
     </header>
     <div class="banner container">
@@ -43,8 +49,8 @@
       </div>
     </div>
     <div class="small-space"></div>
-    <div class="container clearfix">
-      <main class="col-9">
+    <div class="container">
+      <main class="col-9 col-md-12">
         <h2>New Blogs</h2>
         <section class="blog clearfix">
           <ul class="breadcrumb">
@@ -62,7 +68,7 @@
           </div>
         </section>
       </main>
-      <aside class="sideBar col-3">
+      <aside class="sideBar col-3 col-md-4">
         <section>
           <div class="sideBar_intro">I'm Robert Janagap a front-end developer and focusing more in javascript.you can follow me in.</div>
         </section>
@@ -71,9 +77,12 @@
             <li>
               <h3 class="sideBar_title">Follow Me</h3>
             </li>
-            <li><a href="">fb</a></li>
-            <li><a href="">twitter</a></li>
-            <li><a href="">gmail</a></li>
+            <li><a href="">
+                <div class="fa fa-facebook-square fa-lg"></div>Facebook</a></li>
+            <li><a href="">
+                <div class="fa fa-twitter-square fa-lg"></div>Twitter</a></li>
+            <li><a href="">
+                <div class="fa fa-github-square fa-lg"></div>Github</a></li>
           </ul>
         </section>
         <section>
@@ -90,7 +99,9 @@
           <div class="sideBar_search">
             <form class="clearfix">
               <input type="text" name="search">
-              <button>S</button>
+              <button>
+                <div class="fa fa-search fa-lg"></div>
+              </button>
             </form>
           </div>
         </section>

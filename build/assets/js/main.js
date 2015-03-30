@@ -1,1 +1,1 @@
-
+!function(n){n(".nav_icon").on("click",function(){n(".header_responsive").slideToggle()})}(jQuery);

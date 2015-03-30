@@ -1,5 +1,22 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 719px){
+	.container{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.col-md-12{
+		@include span(12);
+		margin: 0;
+	}
+	.col-md-4{
+		@include span(6);
+	}
 	body{
 		background: lightgreen;
+	}
+	.header_list{
+		display: none;
+	}
+	.nav_icon{
+		display: block;
 	}
 }
