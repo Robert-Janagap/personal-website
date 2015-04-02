@@ -1,4 +1,7 @@
 @media screen and (min-width: 320px) and (max-width: 479px){
+	body{
+		background: green;
+	}
 	.container{
 		width: 95%;
 		margin: 0 auto;
@@ -10,13 +13,13 @@
 	.col-md-4{
 		@include span(8);
 	}
-	body{
-		background: green;
-	}
 	.header_list{
 		display: none;
 	}
 	.nav_icon{
 		display: block;
+	}
+	.header_responsive{
+		width: 100%;
 	}
 }

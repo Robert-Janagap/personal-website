@@ -36,9 +36,12 @@
     }
     section+section{
         padding: $sideBar_section--padding;
+        border: $sideBar_section--border;
+        border-radius: $sideBar_section--border-radius;
     }
     &_intro{
         padding-bottom: $sideBar_intro--padding-bottom;
+        border-bottom: $sideBar_intro--border-bottom;
     }
     &_title{
         margin-bottom: $sideBar_title--margin-bottom;
@@ -53,12 +56,22 @@
             height: $sideBar_searchInput--height;
             float: $sideBar_search--float;
             padding-left: $sideBar_search--padding-left;
+            border-radius: $sideBar_search--border-radius;
+            border: $sideBar_search--border;
+            border-right: none;
+            outline: $sideBar_search--outline;
         }
         button{
             float:left;
             height: 34px;
             padding: 0 0.625rem;
             text-align: center;
+            background: transparent;
+            border: 1px solid #d9e0e2;
+            border-radius: 0 8px 8px 0;
+            &:hover{
+                border-color: $outline--color;
+            }
         }
     }
 }
@@ -66,8 +79,22 @@
 /** footer */
 footer{
     color: $header_navlinks--color;
-    padding: 50px 0;
-    border-top: 2px solid rgb(200, 200, 200);
-    text-align: center;
     background: $blue-darker;
+    box-shadow: 0 0 -5px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #c8c8c8;
+    .footer{
+        height: 80px;
+        &_content{
+            float:left;
+            line-height: 80px;
+        }
+        &_icons{
+            float:right;
+            line-height: 80px;
+        }
+        &_items{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
 }

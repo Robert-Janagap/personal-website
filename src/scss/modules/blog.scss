@@ -25,6 +25,7 @@
 		}
 	&_content{
 		overflow:$blog_content--overflow;
+		letter-spacing: .3px;
 		&_links{
 			color: $blog_contentLinks--color;
 			text-decoration: $blog_contentLinks--text-decoration;
