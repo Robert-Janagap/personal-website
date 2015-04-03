@@ -409,6 +409,8 @@ h6 {
 .scroll_top--btn {
   background: yellow;
   cursor: pointer;
+  opacity: .5;
+  display: none;
 }
 
 .btn_red:hover {
@@ -529,16 +531,15 @@ footer {
 }
 footer .footer {
   height: 80px;
-}
-footer .footer_content {
-  float: left;
   line-height: 80px;
 }
-footer .footer_icons {
+footer .footer_logo {
+  text-align: center;
+}
+footer .footer_navIcons {
   float: right;
-  line-height: 80px;
 }
-footer .footer_items {
+footer .footer_navIcons--items {
   display: inline-block;
   margin-left: 10px;
 }

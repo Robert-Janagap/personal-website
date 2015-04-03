@@ -84,17 +84,19 @@ footer{
     border-top: 1px solid #c8c8c8;
     .footer{
         height: 80px;
-        &_content{
-            float:left;
-            line-height: 80px;
+        line-height: 80px;
+        &_copyright{
+
         }
-        &_icons{
+        &_logo{
+            text-align: center;
+        }
+        &_navIcons{
             float:right;
-            line-height: 80px;
-        }
-        &_items{
-            display: inline-block;
-            margin-left: 10px;
+            &--items{
+                display: inline-block;
+                margin-left: 10px;
+            }
         }
     }
 }

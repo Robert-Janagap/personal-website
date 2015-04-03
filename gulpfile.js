@@ -56,6 +56,7 @@ gulp.task('jshint', function(){
 	var src = 'src/js/*.js';
 	gulp.src(src)
 		.pipe(changed('build/assets/js/**/*.js'))
+		.pipe(plumber())
 		.pipe(jshint())
 		.pipe(jshint.reporter(stylish))
 		.pipe(uglify())
@@ -89,7 +90,7 @@ gulp.task('watch', function(){
 
 /** livereload */
 gulp.task('livereload', function(){
-	watch(['./build/**/*.html', './build/assets/css/main.css','./build/assets/js/*.js'])
+	watch(['./build/*.html', './build/assets/css/main.css','./build/assets/js/*.js'])
 		.pipe(connect.reload());
 });
 

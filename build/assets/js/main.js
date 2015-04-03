@@ -1,1 +1,1 @@
-!function(n){n(".nav_icon").on("click",function(){n(".header_responsive").slideToggle()})}(jQuery);
+!function(o){o(".nav_icon").on("click",function(){o(".header_responsive").slideToggle()}),o(window).on("scroll",function(){o(window).scrollTop()>500?(o(".scroll_top--btn").fadeIn(600),console.log(o(window).scrollTop())):(o(".scroll_top--btn").fadeOut(600),console.log(o(window).scrollTop()))}),o(".scroll_top--btn").on("click",function(){o("html, body").animate({scrollTop:0},600)})}(jQuery);
