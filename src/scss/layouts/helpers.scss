@@ -20,7 +20,6 @@
         margin-left: $header_navMenu--margin-left;
         &--link{
             font-size: $h3-font-size;
-            color: $header_navlinks--color;
             &:hover{
                 color:$header_navlinks--hover-color;
                 text-decoration: none;
@@ -80,22 +79,35 @@
 footer{
     color: $header_navlinks--color;
     background: $blue-darker;
-    box-shadow: 0 0 -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     border-top: 1px solid #c8c8c8;
     .footer{
-        height: 80px;
-        line-height: 80px;
+        a:hover{
+            color:$header_navlinks--hover-color;
+            text-decoration: none;
+        }
+        text-align: center;
+        padding: 45px 0;
         &_copyright{
-
+            display: block;
+            margin-bottom: 10px;
         }
         &_logo{
-            text-align: center;
+            display: block;
+            margin-bottom: 10px;
         }
-        &_navIcons{
-            float:right;
+        &_nav{
+            display: block;
             &--items{
                 display: inline-block;
-                margin-left: 10px;
+                padding-right: 8px;
+                margin-right: 5px;
+                border-right: 1px solid #7E7E7E;
+                &:last-child{
+                    border-right: 0;
+                }
+            }
+            &--link{
             }
         }
     }

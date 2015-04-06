@@ -8,7 +8,7 @@
 		margin: 0;
 	}
 	.col-md-4{
-		@include span(6);
+		@include span(7);
 	}
 	body{
 		background: hsl(130, 100%, 50%);

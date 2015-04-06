@@ -470,7 +470,6 @@ h6 {
 }
 .header_items--link {
   font-size: 1.424em;
-  color: #c8c8c8;
 }
 .header_items--link:hover {
   color: #EDEDED;
@@ -526,22 +525,36 @@ h6 {
 footer {
   color: #c8c8c8;
   background: #051a37;
-  box-shadow: 0 0 -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   border-top: 1px solid #c8c8c8;
 }
 footer .footer {
-  height: 80px;
-  line-height: 80px;
+  text-align: center;
+  padding: 45px 0;
+}
+footer .footer a:hover {
+  color: #EDEDED;
+  text-decoration: none;
+}
+footer .footer_copyright {
+  display: block;
+  margin-bottom: 10px;
 }
 footer .footer_logo {
-  text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
-footer .footer_navIcons {
-  float: right;
+footer .footer_nav {
+  display: block;
 }
-footer .footer_navIcons--items {
+footer .footer_nav--items {
   display: inline-block;
-  margin-left: 10px;
+  padding-right: 8px;
+  margin-right: 5px;
+  border-right: 1px solid #7E7E7E;
+}
+footer .footer_nav--items:last-child {
+  border-right: 0;
 }
 
 @media screen and (min-width: 240px) and (max-width: 319px) {
@@ -586,6 +599,13 @@ footer .footer_navIcons--items {
     margin-right: 0.83333%;
   }
 
+  .col-sm-12 {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
   .header_list {
     display: none;
   }
@@ -613,7 +633,7 @@ footer .footer_navIcons--items {
   }
 
   .col-md-4 {
-    width: 48.33333%;
+    width: 56.66667%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
@@ -664,7 +684,7 @@ footer .footer_navIcons--items {
     display: block;
   }
 }
-@media screen and (min-width: 720px) and (max-width: 767px) {
+@media screen and (min-width: 720px) and (max-width: 799px) {
   .container {
     width: 95%;
     margin: 0 auto;
@@ -697,7 +717,7 @@ footer .footer_navIcons--items {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 799px) {
+@media screen and (min-width: 800px) and (max-width: 959px) {
   .container {
     width: 95%;
     margin: 0 auto;
@@ -712,7 +732,7 @@ footer .footer_navIcons--items {
   }
 
   .col-md-4 {
-    width: 31.66667%;
+    width: 40%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
@@ -730,7 +750,7 @@ footer .footer_navIcons--items {
     display: block;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 960px) and (max-width: 1023px) {
   body {
     background: skyblue;
   }

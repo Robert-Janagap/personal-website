@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 799px){
+@media screen and (min-width: 800px) and (max-width: 959px){
 	.container{
 		width: 95%;
 		margin: 0 auto;
@@ -8,7 +8,7 @@
 		margin: 0;
 	}
 	.col-md-4{
-		@include span(4);
+		@include span(5);
 	}
 	body{
 		background: hsl(210, 100%, 70%);

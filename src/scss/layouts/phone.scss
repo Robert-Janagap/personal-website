@@ -13,6 +13,9 @@
 	.col-md-4{
 		@include span(8);
 	}
+	.col-sm-12{
+		@include span(12);
+	}
 	.header_list{
 		display: none;
 	}
