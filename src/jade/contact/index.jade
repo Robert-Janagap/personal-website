@@ -1,4 +1,5 @@
 extends ../lib/docwrapper
+
 append title-page
     title Contact me
 append head-link
@@ -6,12 +7,14 @@ append head-link
     link(rel ='stylesheet' href='../assets/css/lib/boilerplate-style.css')
     link(rel ='stylesheet' href='../assets/css/lib/font-awesome.css')
     link(rel ='stylesheet' href='../assets/css/main.css')
-append logo
-    a(href="../")
-        img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
 append scripts
     script window.jQuery || document.write('<script src="../assets/js/lib/jquery-1.11.1.min.js"><\/script>')
     script(src="../assets/js/main.js")
+append logo
+    a(href="../")
+        img(src="../assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;")
+    a(href="../").header--fixed
+        img(src="../assets/img/rr_logo.png" alt="My Logo" style="height: 60px;")
 append mainNav-links
     nav.header_nav
         ul.header_list
@@ -30,6 +33,22 @@ append responsive-links
                 a(href="../blog/").header_responsive--link Blog
             li.header_responsive--items
                 a(href="").header_responsive--link Contact
+append mainFooter
+    ul
+        li.footer_nav--items
+            a(href="../").footer_nav--link Home
+        li.footer_nav--items
+            a(href="../about/").footer_nav--link About
+        li.footer_nav--items
+            a(href="../blog/").footer_nav--link Blog
+        li.footer_nav--items
+            a(href="").footer_nav--link Contact
+        li.footer_nav--items
+            a(href="").footer_nav--link Facebook
+        li.footer_nav--items
+            a(href="").footer_nav--link Github
+        li.footer_nav--items
+            a(href="").footer_nav--link Twitter
 block mainContent
     main.col-9
         article.contact
@@ -61,3 +80,4 @@ block mainContent
                     tr
                         td
                             input(type="submit" value="submit")
+        .small-space

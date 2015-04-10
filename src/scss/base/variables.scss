@@ -31,20 +31,13 @@ $header_navlinks--hover-color: #EDEDED;
 /** end */
 
 /** sideBar */
-$sideBar_section--margin-bottom: 1.875rem;
-$sideBar_section--border: 1px solid #d9e0e2;
-$sideBar_section--border-radius: 4px;
-$sideBar_section--padding: 0.625rem;
 //intro
-$sideBar_intro--margin-top: 0px;
-$sideBar_intro--margin-bottom: 0.312rem;
-$sideBar_intro--padding-bottom: 0.312rem;
-$sideBar_intro--border-bottom: 2px solid #d9e0e2;
 //title
 $sideBar_title--margin-top: 0px;
 $sideBar_title--margin-bottom: 0.312rem;
 //links
-$sideBar_linksIndent--margin-left: .75rem;
+$sideBar_links--margin-left: .75rem;
+$sideBar_links--margin-top: .3125rem;
 //search
 $sideBar_search--margin-top: 0.625rem;
 $sideBar_searchInput--height:34px;

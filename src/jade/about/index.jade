@@ -12,7 +12,9 @@ append scripts
     script(src="../assets/js/main.js")
 append logo
     a(href="../")
-        img(src="../assets/img/logo.png" alt="My Logo" style="width: 250px")
+        img(src="../assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;")
+    a(href="../").header--fixed
+        img(src="../assets/img/rr_logo.png" alt="My Logo" style="height: 60px;")
 append mainNav-links
     nav.header_nav
         ul.header_list
@@ -31,8 +33,24 @@ append responsive-links
                 a(href="../blog/").header_responsive--link Blog
             li.header_responsive--items
                 a(href="../contact/").header_responsive--link Contact
+append mainFooter
+    ul
+        li.footer_nav--items
+            a(href="../").footer_nav--link Home
+        li.footer_nav--items
+            a(href="").footer_nav--link About
+        li.footer_nav--items
+            a(href="../blog/").footer_nav--link Blog
+        li.footer_nav--items
+            a(href="../contact/").footer_nav--link Contact
+        li.footer_nav--items
+            a(href="").footer_nav--link Facebook
+        li.footer_nav--items
+            a(href="").footer_nav--link Github
+        li.footer_nav--items
+            a(href="").footer_nav--link Twitter
 block mainContent
-    main.col-9
+    main.col-9.col-md-12.col-sm-12
         article.clearfix
             img(src="../assets/img/logo.png" alt="My Picture" style="min-height: 200px; width: 100%;")
             p
@@ -41,7 +59,7 @@ block mainContent
             p
                 |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem accusamus deleniti fuga, culpa, accusantium vitae corporis vel obcaecati modi. Adipisci mollitia aliquam quis deserunt molestiae, ipsum voluptates quia porro expedita?
         .small-space
-        .skills.clearfix
+        .set.clearfix
             h2 Skills
             nav.widgets
                 ul.list
@@ -60,10 +78,19 @@ block mainContent
                     li.list_items responsive design
                     li.list_items mobile
         .small-space
-        .projects.clearfix
+        .set.clearfix
             h2 Projects
             nav.widgets
                 ul.project_list
-                    li.project_list_items
+                    li.project_items
+                        a(href="")
+                            img(alt="Personal Website")
+                    li.project_items
+                        a(href="")
+                            img(alt="Personal Website")
+                    li.project_items
+                        a(href="")
+                            img(alt="Personal Website")
+                    li.project_items
                         a(href="")
                             img(alt="Personal Website")

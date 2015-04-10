@@ -1,16 +1,9 @@
 @media screen and (min-width: 320px) and (max-width: 479px){
-	body{
-		background: green;
-	}
 	.container{
 		width: 95%;
 		margin: 0 auto;
 	}
-	.col-md-12{
-		@include span(12);
-		margin: 0;
-	}
-	.col-md-4{
+	.col-sm-8{
 		@include span(8);
 	}
 	.col-sm-12{
@@ -24,5 +17,8 @@
 	}
 	.header_responsive{
 		width: 100%;
+	}
+	.sideBar_search--input{width:65%}
+	.list{
 	}
 }

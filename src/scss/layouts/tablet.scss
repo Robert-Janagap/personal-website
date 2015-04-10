@@ -7,11 +7,8 @@
 		@include span(12);
 		margin: 0;
 	}
-	.col-md-4{
-		@include span(5);
-	}
-	body{
-		background: hsl(230,100%,50%);
+	.col-md-6{
+		@include span(6);
 	}
 	.header_list{
 		display: none;
@@ -19,4 +16,9 @@
 	.nav_icon{
 		display: block;
 	}
+	.header_responsive{
+		width: 50%;
+	}
+	.sideBar_search--input{width:55%}
+	.sideBar_search--btn{width:15%}
 }

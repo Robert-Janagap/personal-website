@@ -5,7 +5,7 @@
     box-shadow:$header--box-shadow;
     border-bottom: $header--border-bottom;
     background: $blue-darker;
-    .logo{
+    &_logo{
         float: left;
         line-height: 80px;
     }
@@ -27,31 +27,29 @@
         }
     }
 }
-
 /** Side bar */
 .sideBar{
-    section{
-        margin-bottom: $sideBar_section--margin-bottom;
-    }
-    section+section{
-        padding: $sideBar_section--padding;
-        border: $sideBar_section--border;
-        border-radius: $sideBar_section--border-radius;
-    }
-    &_intro{
-        padding-bottom: $sideBar_intro--padding-bottom;
-        border-bottom: $sideBar_intro--border-bottom;
+    &_section{
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #e2e2e2;
+        &:last-child{
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
     }
     &_title{
         margin-bottom: $sideBar_title--margin-bottom;
     }
     li + li{
-        margin-left: $sideBar_linksIndent--margin-left;
+        margin-left: $sideBar_links--margin-left;
+        margin-top: $sideBar_links--margin-top;
     }
     &_search{
         margin-top: $sideBar_search--margin-top;
-        input{
-            width: 70%;
+        &--input{
+            width: 85%;
             height: $sideBar_searchInput--height;
             float: $sideBar_search--float;
             padding-left: $sideBar_search--padding-left;
@@ -60,10 +58,10 @@
             border-right: none;
             outline: $sideBar_search--outline;
         }
-        button{
+        &--btn{
             float:left;
+            width: 15%;
             height: 34px;
-            padding: 0 0.625rem;
             text-align: center;
             background: transparent;
             border: 1px solid #d9e0e2;

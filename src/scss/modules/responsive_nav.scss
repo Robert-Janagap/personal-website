@@ -7,32 +7,36 @@
     &:hover{
     color: #fff;
     }
+    &--click{
+        color:#fff;
+    }
 }
 .header_responsive{
-     position: fixed;
-     top: 80px;
-     right: 0;
-     z-index: 5;
-     background: rgba(0,0,0,0.4);
-     text-align: center;
-     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-     border-radius: 3px;
-     display: none;
-     &--items{
-        border-bottom: 1px solid #e2e2e2;
-        &:last-child {
+    width: 40%;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    z-index: 5;
+    background: rgba(24, 63, 165, 1);
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    display: none;
+        &--items{
+            border-bottom: 1px solid #e2e2e2;
+            &:last-child {
             border-bottom: 0;
+            }
         }
-     }
-     &--link{
+        &--link{
         display: block;
         padding: 0.625rem 4.375rem;
         color: #EDEAEA;
         font-size: $h3-font-size;
-        &:hover{
+            &:hover{
             color: #fff;
             text-decoration: none;
             box-shadow:  inset 3px 3px 5px rgba(229, 229, 229, 0.8),inset -3px -3px 5px rgba(229, 229, 229, 0.8);
+            }
         }
-     }
 }

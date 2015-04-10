@@ -18,6 +18,7 @@
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
       to improve your experience.
     </p><![endif]-->
+    <div class="overlay"></div>
     <header class="clearfix header">
       <div class="container">
         <nav class="header_responsive">
@@ -27,7 +28,7 @@
             <li class="header_responsive--items"><a href="../contact/" class="header_responsive--link">Contact</a></li>
           </ul>
         </nav>
-        <div class="logo"><a href="../"><img src="../assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
+        <div class="header_logo"><a href="../"><img src="../assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;"></a><a href="../" class="header--fixed"><img src="../assets/img/rr_logo.png" alt="My Logo" style="height: 60px;"></a>
         </div>
         <nav class="header_nav">
           <ul class="header_list">
@@ -41,7 +42,7 @@
     </header>
     <div class="small-space"></div>
     <div class="container">
-      <main class="col-9">
+      <main class="col-9 col-md-12 col-sm-12">
         <article class="clearfix"><img src="../assets/img/logo.png" alt="My Picture" style="min-height: 200px; width: 100%;">
           <p>
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, incidunt maxime atque totam cupiditate aperiam eos. Voluptatum excepturi quae quo animi nulla. Aliquid corrupti eius quis itaque amet nam aspernatur!
@@ -50,7 +51,7 @@
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem accusamus deleniti fuga, culpa, accusantium vitae corporis vel obcaecati modi. Adipisci mollitia aliquam quis deserunt molestiae, ipsum voluptates quia porro expedita?</p>
         </article>
         <div class="small-space"></div>
-        <div class="skills clearfix">
+        <div class="set clearfix">
           <h2>Skills</h2>
           <nav class="widgets">
             <ul class="list">
@@ -74,20 +75,23 @@
           </nav>
         </div>
         <div class="small-space"></div>
-        <div class="projects clearfix">
+        <div class="set clearfix">
           <h2>Projects</h2>
           <nav class="widgets">
             <ul class="project_list">
-              <li class="project_list_items"><a href=""><img alt="Personal Website"></a></li>
+              <li class="project_items"><a href=""><img alt="Personal Website"></a></li>
+              <li class="project_items"><a href=""><img alt="Personal Website"></a></li>
+              <li class="project_items"><a href=""><img alt="Personal Website"></a></li>
+              <li class="project_items"><a href=""><img alt="Personal Website"></a></li>
             </ul>
           </nav>
         </div>
       </main>
-      <aside class="sideBar col-3 col-md-4 col-sm-12">
-        <section>
+      <aside class="sideBar col-3 col-md-6 col-sm-12">
+        <section class="sideBar_section">
           <div class="sideBar_intro">I'm Robert Janagap a front-end developer and focusing more in javascript.you can follow me in.</div>
         </section>
-        <section>
+        <section class="sideBar_section">
           <ul>
             <li>
               <h3 class="sideBar_title">Follow Me</h3>
@@ -100,7 +104,7 @@
                 <div class="fa fa-github-square fa-lg"></div>Github</a></li>
           </ul>
         </section>
-        <section>
+        <section class="sideBar_section">
           <ul>
             <li>
               <h3 class="sideBar_title">Recent Blogs</h3>
@@ -112,7 +116,7 @@
             <li><a href="#">blogger</a></li>
           </ul>
         </section>
-        <section>
+        <section class="sideBar_section">
           <ul>
             <li>
               <h3 class="sideBar_title">Top Blogs</h3>
@@ -124,12 +128,12 @@
             <li><a href="#">blogger</a></li>
           </ul>
         </section>
-        <section>
+        <section class="sideBar_section col-sm-7">
           <h3 class="sideBar_title">Search</h3>
           <div class="sideBar_search">
             <form class="clearfix">
-              <input type="text" name="search">
-              <button>
+              <input type="text" name="search" class="sideBar_search--input">
+              <button class="sideBar_search--btn">
                 <div class="fa fa-search fa-lg"></div>
               </button>
             </form>
@@ -141,15 +145,15 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer_logo"><a href="../"><img src="../assets/img/logo.png" alt="My Logo" style="width: 250px"></a>
+          <div class="footer_logo"><a href="../"><img src="../assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;"></a><a href="../" class="header--fixed"><img src="../assets/img/rr_logo.png" alt="My Logo" style="height: 60px;"></a>
           </div>
           <div class="footer_copyright"> copyright &copy; 2015<a href=""> Robert Janagap</a></div>
           <div class="footer_nav">
             <ul>
-              <li class="footer_nav--items"><a href="" class="footer_nav--link">Home</a></li>
+              <li class="footer_nav--items"><a href="../" class="footer_nav--link">Home</a></li>
               <li class="footer_nav--items"><a href="" class="footer_nav--link">About</a></li>
-              <li class="footer_nav--items"><a href="" class="footer_nav--link">Blog</a></li>
-              <li class="footer_nav--items"><a href="" class="footer_nav--link">Contact</a></li>
+              <li class="footer_nav--items"><a href="../blog/" class="footer_nav--link">Blog</a></li>
+              <li class="footer_nav--items"><a href="../contact/" class="footer_nav--link">Contact</a></li>
               <li class="footer_nav--items"><a href="" class="footer_nav--link">Facebook</a></li>
               <li class="footer_nav--items"><a href="" class="footer_nav--link">Github</a></li>
               <li class="footer_nav--items"><a href="" class="footer_nav--link">Twitter</a></li>

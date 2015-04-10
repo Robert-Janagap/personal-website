@@ -10,3 +10,10 @@
 	    font-style: normal;
 	}
 }
+
+@mixin header_fixed(){
+	 position: fixed;
+	 height: 60px;
+	 background: $blue-darker;
+	 box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+}

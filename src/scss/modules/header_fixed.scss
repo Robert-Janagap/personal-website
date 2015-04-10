@@ -1,0 +1,16 @@
+.header--fixed{
+	@include header_fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px 0 25px;
+    border-radius: 0 10px 10px 0;
+    line-height: 0;
+    display: none;
+}
+.nav_icon--fixed{
+	@include header_fixed;
+    top: 0;
+    padding: 15px 25px 15px 10px;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
