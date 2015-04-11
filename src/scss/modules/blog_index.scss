@@ -1,0 +1,11 @@
+.blog_index{
+	float: right;
+	&--items{
+		display: inline-block;
+	}
+	&--number{
+		padding: 10px 20px;
+		background: green;
+		border-radius: 2px;
+	}
+}

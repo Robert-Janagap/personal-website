@@ -262,6 +262,18 @@ h6 {
   margin: 5px;
 }
 
+.blog_index {
+  float: right;
+}
+.blog_index--items {
+  display: inline-block;
+}
+.blog_index--number {
+  padding: 10px 20px;
+  background: green;
+  border-radius: 2px;
+}
+
 .btn {
   padding: .625rem;
   text-align: center;
@@ -390,57 +402,37 @@ h6 {
   display: none;
 }
 
+.set {
+  margin-bottom: 20px;
+}
+
 .list {
-  width: 31.11111%;
+  width: 31%;
   float: left;
+  margin-right: 2.062%;
   border-right: 2px solid #eceff0;
 }
-.list:nth-child(3n + 1) {
-  margin-left: 1.11111%;
-  margin-right: -100%;
-  clear: both;
-}
-.list:nth-child(3n + 2) {
-  margin-left: 34.44444%;
-  margin-right: -100%;
-  clear: none;
-}
-.list:nth-child(3n + 3) {
-  margin-left: 67.77778%;
-  margin-right: -100%;
-  clear: none;
+.list h3 {
+  margin-bottom: 5px;
 }
 .list:last-child {
   border-right: none;
+  margin-right: 0;
 }
 .list_items {
   list-style-type: circle;
-  margin-left: 15px;
+  margin-left: 12%;
 }
 
 .project_items {
-  width: 31.11111%;
+  width: 31%;
   float: left;
-  margin-bottom: 10px;
+  margin-right: 2.062%;
+  margin-bottom: 2.062%;
   height: 200px;
   list-style-type: none;
   border: 2px solid #d9e0e2;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
-.project_items:nth-child(3n + 1) {
-  margin-left: 1.11111%;
-  margin-right: -100%;
-  clear: both;
-}
-.project_items:nth-child(3n + 2) {
-  margin-left: 34.44444%;
-  margin-right: -100%;
-  clear: none;
-}
-.project_items:nth-child(3n + 3) {
-  margin-left: 67.77778%;
-  margin-right: -100%;
-  clear: none;
 }
 
 .header--fixed {
@@ -580,6 +572,7 @@ footer {
   background: #051a37;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   border-top: 1px solid #c8c8c8;
+  margin-top: 5.25rem;
 }
 footer .footer {
   text-align: center;
@@ -629,13 +622,6 @@ footer .footer_nav--items:last-child {
     margin: 0 auto;
   }
 
-  .col-sm-8 {
-    width: 65%;
-    float: left;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-  }
-
   .col-sm-12 {
     width: 98.33333%;
     float: left;
@@ -657,6 +643,19 @@ footer .footer_nav--items:last-child {
 
   .sideBar_search--input {
     width: 65%;
+  }
+
+  .list {
+    width: 100%;
+    margin-right: 0;
+    border-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .project_items {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5.062%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 599px) {
@@ -696,7 +695,7 @@ footer .footer_nav--items:last-child {
   }
 
   .sideBar_search--btn {
-    width: 20%;
+    width: 13%;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 719px) {

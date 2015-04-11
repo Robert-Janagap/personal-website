@@ -27,17 +27,16 @@
 
 	headerNav_icon.on('click', function(e){
 		e.preventDefault();
-		headerNav_responsive.slideToggle();
+		headerNav_responsive.slideToggle(300);
 		$(this).toggleClass('nav_icon--click');
-		overlay.fadeToggle(600);
+		overlay.fadeToggle(300);
 	});
 
 	overlay.on('click', function(e){
 		e.preventDefault();
 		$(this).fadeOut(600);
-		$('.header--fixed').hide(400);
 		headerNav_responsive.slideUp(400);
-		headerNav_icon.removeClass('nav_icon--fixed');
+		headerNav_icon.removeClass('nav_icon--click');
 	});
 
 
@@ -46,6 +45,4 @@
 			scrollTop: 0
 		}, 600);
 	});
-
-
 })(jQuery);

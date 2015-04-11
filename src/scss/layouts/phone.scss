@@ -3,9 +3,6 @@
 		width: 95%;
 		margin: 0 auto;
 	}
-	.col-sm-8{
-		@include span(8);
-	}
 	.col-sm-12{
 		@include span(12);
 	}
@@ -20,5 +17,27 @@
 	}
 	.sideBar_search--input{width:65%}
 	.list{
+		width: 100%;
+		margin-right: 0;
+		border-right: 0;
+		margin-bottom: 15px;
 	}
+	.project_items{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5.062%;
+	}
+	// .sideBar{
+	// 	&_title{
+	// 		cursor: pointer;
+	// 	}
+	// 	&_items{
+	// 		&+ .sideBar_items{
+	// 		display: none;
+	// 		}
+	// 		&:last-child .sideBar_title{
+	// 		cursor: default;
+	// 		}
+	// 	}
+	// }
 }

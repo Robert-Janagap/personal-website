@@ -1,18 +1,30 @@
+.set{
+	margin-bottom: 20px;
+}
 .list{
-	@include gallery(3 of 9);
+	width: 31%;
+	float: left;
+	margin-right: 2.062%;
 	border-right: 2px solid #eceff0;
+	h3{
+		margin-bottom: 5px;
+	}
 	&:last-child{
 		border-right: none;
+		margin-right: 0;
 	}
+
 	&_items{
 		list-style-type: circle;
-		margin-left: 15px;
+		margin-left: 12%;
 	}
 }
 .project{
 	&_items{
-		@include gallery(3 of 9);
-		margin-bottom: 10px;
+		width: 31%;
+		float: left;
+		margin-right: 2.062%;
+		margin-bottom: 2.062%;
 		height: 200px;
 		list-style-type: none;
 		border:2px solid #d9e0e2;
