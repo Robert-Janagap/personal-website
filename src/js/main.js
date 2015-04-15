@@ -22,30 +22,29 @@
 	}).on('scroll', function(){
 		//when the window scroll down
 		//view the fixed nav icon button
-		if( win.scrollTop() > 80 ){
+		if( win.scrollTop() >= 80 ){
 			//if the layout is phone
 			if(win.width() <= 479){
 				scroll_top = false;
 			}else{
 				$('.header_logo--fixed').show(400);
-				headerNav_icon.addClass('nav_icon--fixed');
+				headerNav_icon.addClass('nav_icon--fixed').show(400);
 				headerNav_responsive.css('top', '60px');
 				scroll_top = true;
 			}
 		}else{//when the window scroll up
-			//if the window greater the 960px
+			//if the window greater the 960px close the fixed nav
 			if(win.width() >= 960){
 				headerNav_responsive.slideUp(400);
 				overlay.fadeOut(400);
 				headerNav_icon.removeClass('nav_icon--click');
 			}
-			$('.header_logo--fixed').slideUp(300);
-			headerNav_icon.removeClass('nav_icon--fixed');
+			$('.header_logo--fixed').hide();
+			headerNav_icon.removeClass('nav_icon--fixed').hide();
 			headerNav_responsive.css('top', '80px');
 		}
 		//scroll top button toggle
 		(win.scrollTop() > 500 && scroll_top) ? scrollTop_btn.fadeIn(600) : scrollTop_btn.fadeOut(600);
-
 	});
 
 	headerNav_icon.on('click', function(e){

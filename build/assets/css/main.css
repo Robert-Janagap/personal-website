@@ -351,10 +351,10 @@ h6 {
 }
 
 .nav_icon {
+  display: none;
   position: absolute;
   top: 30px;
   right: 0;
-  display: none;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -398,6 +398,30 @@ h6 {
   box-shadow: inset 3px 3px 5px rgba(229, 229, 229, 0.8), inset -3px -3px 5px rgba(229, 229, 229, 0.8);
 }
 
+.header_logo--fixed {
+  position: fixed;
+  height: 60px;
+  background: #051a37;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  padding: 0 10px 0 25px;
+  border-radius: 0 10px 10px 0;
+  line-height: 0;
+  float: none;
+  display: none;
+}
+
+.nav_icon--fixed {
+  position: fixed;
+  height: 60px;
+  background: #051a37;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+  top: 0;
+  padding: 15px 25px 15px 10px;
+  border-radius: 10px 0 0 10px;
+}
+
 .scroll_top {
   position: fixed;
   bottom: 240px;
@@ -405,7 +429,7 @@ h6 {
   z-index: 1;
 }
 .scroll_top--btn {
-  background: yellow;
+  background: #fff;
   cursor: pointer;
   opacity: .5;
   display: none;
@@ -442,30 +466,6 @@ h6 {
   list-style-type: none;
   border: 2px solid #d9e0e2;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
-
-.header_logo--fixed {
-  position: fixed;
-  height: 60px;
-  background: #051a37;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
-  top: 0;
-  left: 0;
-  padding: 0 10px 0 25px;
-  border-radius: 0 10px 10px 0;
-  line-height: 0;
-  display: none;
-}
-
-.nav_icon--fixed {
-  position: fixed;
-  height: 60px;
-  background: #051a37;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
-  top: 0;
-  padding: 15px 25px 15px 10px;
-  border-radius: 10px 0 0 10px;
-  display: block;
 }
 
 .btn_red:hover {
