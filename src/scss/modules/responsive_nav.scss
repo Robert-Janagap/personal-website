@@ -4,6 +4,7 @@
     right: 0;
     display: none;
     cursor: pointer;
+    user-select: none;
     &:hover{
     color: #fff;
     }

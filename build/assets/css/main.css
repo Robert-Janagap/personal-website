@@ -270,8 +270,13 @@ h6 {
 }
 .blog_index--number {
   padding: 10px 20px;
-  background: green;
-  border-radius: 2px;
+  border: 1px solid #969696;
+  border-radius: 8px;
+  background: #fff;
+}
+.blog_index--number:hover {
+  text-decoration: none;
+  box-shadow: inset 3px 3px 8px #cccccc, inset -3px -3px 8px #cccccc;
 }
 
 .btn {
@@ -351,6 +356,10 @@ h6 {
   right: 0;
   display: none;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .nav_icon:hover {
   color: #fff;
@@ -435,7 +444,7 @@ h6 {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.header--fixed {
+.header_logo--fixed {
   position: fixed;
   height: 60px;
   background: #051a37;
