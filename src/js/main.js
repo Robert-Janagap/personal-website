@@ -6,41 +6,44 @@
 		overlay = $('.overlay'),
 		scroll_top = true;
 
-	$(window).on('resize', function(){//when the window resize
-		if(win.width() <= 479){
-			$('.header_logo--fixed').hide(400);
+	$(window).on('resize', function(e){//when the window resize
+		if(win.scrollTop() >= 80){
+			$('.header_logo--fixed').show(400);
+			headerNav_icon.addClass('nav_icon--fixed').show();
+			headerNav_responsive.css('top', '60px');
+		}else{
+			$('.header_logo--fixed').hide();
 			headerNav_icon.removeClass('nav_icon--fixed');
 			headerNav_responsive.css('top', '80px');
+			if(win.width() >= 1024){
+				headerNav_responsive.slideUp(400);
+				overlay.fadeOut(400);
+				headerNav_icon.removeClass('nav_icon--click');
+				}
+		}
+		if(win.width() <= 479){
 			scrollTop_btn.hide();
-		}else{
-			if( win.scrollTop() > 80 ){
-				$('.header_logo--fixed').show(400);
-				headerNav_icon.addClass('nav_icon--fixed');
-				headerNav_responsive.css('top', '60px');
-			}
 		}
 	}).on('scroll', function(){
 		//when the window scroll down
 		//view the fixed nav icon button
 		if( win.scrollTop() >= 80 ){
-			//if the layout is phone
-			if(win.width() <= 479){
-				scroll_top = false;
-			}else{
-				$('.header_logo--fixed').show(400);
-				headerNav_icon.addClass('nav_icon--fixed').show(400);
-				headerNav_responsive.css('top', '60px');
-				scroll_top = true;
-			}
-		}else{//when the window scroll up
-			//if the window greater the 960px close the fixed nav
-			if(win.width() >= 960){
+			$('.header_logo--fixed').show(400);
+			headerNav_icon.addClass('nav_icon--fixed');
+			headerNav_responsive.css('top', '60px');
+
+			//if the layout is phone no scroll up
+			scroll_top = (win.width() <= 479) ? false : true;
+		}else{
+		//when the window scroll up
+		//if the window greater the 960px close the fixed nav
+			if(win.width() >= 1024){
 				headerNav_responsive.slideUp(400);
 				overlay.fadeOut(400);
 				headerNav_icon.removeClass('nav_icon--click');
 			}
 			$('.header_logo--fixed').hide();
-			headerNav_icon.removeClass('nav_icon--fixed').hide();
+			headerNav_icon.removeClass('nav_icon--fixed');
 			headerNav_responsive.css('top', '80px');
 		}
 		//scroll top button toggle

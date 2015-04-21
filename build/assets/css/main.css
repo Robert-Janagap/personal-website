@@ -311,6 +311,42 @@ h6 {
   background: #03ea06;
 }
 
+.btn_red:hover {
+  background: #fd6868;
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.btn_blue:hover {
+  background: #68d0fd;
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.btn_orange:hover {
+  background: #fdab68;
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.btn_green:hover {
+  background: #68fd6b;
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.btn_white {
+  padding: 10px 20px;
+  border: 1px solid #969696;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+.btn_white:hover {
+  text-decoration: none;
+  box-shadow: inset 3px 3px 8px #cccccc, inset -3px -3px 8px #cccccc;
+}
+
 .contact-form td {
   padding-bottom: 15px;
 }
@@ -322,13 +358,6 @@ h6 {
 }
 .contact-form td input:focus {
   border-bottom: 1px solid #59C9EF;
-}
-.contact-form td input[type="submit"] {
-  background: #fff;
-  border: 1px solid #d9e0e2;
-  border-radius: 5px;
-  padding: 10px 10px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 .contact-form td textarea {
   resize: none;
@@ -420,6 +449,7 @@ h6 {
   top: 0;
   padding: 15px 25px 15px 10px;
   border-radius: 10px 0 0 10px;
+  display: block;
 }
 
 .scroll_top {
@@ -466,30 +496,6 @@ h6 {
   list-style-type: none;
   border: 2px solid #d9e0e2;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
-
-.btn_red:hover {
-  background: #fd6868;
-  color: #EDEDED;
-  text-decoration: none;
-}
-
-.btn_blue:hover {
-  background: #68d0fd;
-  color: #EDEDED;
-  text-decoration: none;
-}
-
-.btn_orange:hover {
-  background: #fdab68;
-  color: #EDEDED;
-  text-decoration: none;
-}
-
-.btn_green:hover {
-  background: #68fd6b;
-  color: #EDEDED;
-  text-decoration: none;
 }
 
 .is-transparent {

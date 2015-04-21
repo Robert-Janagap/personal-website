@@ -24,3 +24,30 @@ $colors: (
 		background:nth($color, 2);
 	}
 }
+//color when hovered
+$hover-colors:(
+	"red" hsla(0, 97%, 70%, 1),
+	"blue" hsla(198, 97%, 70%, 1),
+	"orange" hsla(27, 97%, 70%, 1),
+	"green" hsla(121, 97%, 70%, 1)
+);
+@each $hover in $hover-colors{
+	.btn_#{nth($hover, 1)}:hover{
+		background:nth($hover, 2);
+		color: #EDEDED;
+		text-decoration: none;
+	}
+}
+
+.btn_white{
+	padding: 10px 20px;
+	border:1px solid #969696;
+	border-radius: 8px;
+	background: #fff;
+	cursor: pointer;
+		&:hover{
+			text-decoration: none;
+			box-shadow: inset 3px 3px 8px hsl(0,0%,80%),inset -3px -3px 8px hsl(0,0%,80%);
+		}
+}
+
