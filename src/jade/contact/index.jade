@@ -51,33 +51,37 @@ append mainFooter
             a(href="").footer_nav--link Twitter
 block mainContent
     main.col-9
+
         article.contact
-            h1 Contact me
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias, maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis.
-            form.contact-form
-                table
-                    tr
-                        td
-                            label(for="full_name") Name:
-                        td
-                            input(type="text" name ="full_name" maxlength="30" placeholder="Enter your full name" required)
-                    tr
-                        td
-                            label(for="email") Email:
-                        td
-                            input(type="email" name="email_address" maxlength="80" placeholder="Example@gmail.com" required)
-                    tr
-                        td
-                            label(for="Website") Website:
-                        td
-                            input(type="url" name="home_page" placeholder="http://example.com")
-                    tr
-                        td
-                            label(for="message") Message:
-                    tr
-                        td(colspan="2")
-                            textarea(name="message" maxlength="1000" cols="50" rows="6" placeholder="message here...")
-                    tr
-                        td
-                           a.btn_white Submit
+            .contact_overlay
+                h2.overlay_message under construction
+            .contact_module
+                h1 Contact me
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias, maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis.
+                form.contact-form
+                    table
+                        tr
+                            td
+                                label(for="full_name") Name:
+                            td
+                                input(type="text" name ="full_name" maxlength="30" placeholder="Enter your full name" required)
+                        tr
+                            td
+                                label(for="email") Email:
+                            td
+                                input(type="email" name="email_address" maxlength="80" placeholder="Example@gmail.com" required)
+                        tr
+                            td
+                                label(for="Website") Website:
+                            td
+                                input(type="url" name="home_page" placeholder="http://example.com")
+                        tr
+                            td
+                                label(for="message") Message:
+                        tr
+                            td(colspan="2")
+                                textarea(name="message" maxlength="1000" cols="50" rows="6" placeholder="message here...")
+                        tr
+                            td
+                               a.btn_white Submit
         .small-space
