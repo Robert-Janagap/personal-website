@@ -63,7 +63,8 @@ block mainContent
         h2 New Blogs
         section.blog.clearfix
             ul.breadcrumb
-                li: a(href="") Fb
+                li: .fb-share-button(data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count") Share
+                //-li: <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count">share</div>
                 li: a(href="") Twitter
             .blog_date_posted
                 | March 5, 2015 /
@@ -87,7 +88,7 @@ block mainContent
                     a(href="#")  youjizz
                     | ,
                     a(href="#")  fakku
-        section.blog.clearfix
+        section.blog.clearfix.blog_lastChild
             ul.breadcrumb
                 li: a(href="") Fb
                 li: a(href="") Twitter

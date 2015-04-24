@@ -6,13 +6,23 @@
     <title>Robert Janagap</title>
     <meta name="description" content="My Personal website home page.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="assets/js/modernizr-2.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/lib/normalize.css">
     <link rel="stylesheet" href="assets/css/lib/boilerplate-style.css">
     <link rel="stylesheet" href="assets/css/lib/font-awesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
-  <body><!--[if lt IE 8]>
+  <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=888977994473736";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+    </script><!--[if lt IE 8]>
     <p class="browsehappy">
       You are using an <strong>outdated</strong> browser.
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
@@ -53,7 +63,9 @@
         <h2>New Blogs</h2>
         <section class="blog clearfix">
           <ul class="breadcrumb">
-            <li><a href="">Fb</a></li>
+            <li>
+              <div data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" class="fb-share-button">Share</div>
+            </li>
             <li><a href="">Twitter</a></li>
           </ul>
           <div class="blog_date_posted">March 5, 2015 /<a href="about/index.html">Robert Janagap</a></div>
@@ -66,7 +78,7 @@
             <p>tags:<a href="#"> youjizz</a>,<a href="#"> fakku</a></p>
           </div>
         </section>
-        <section class="blog clearfix">
+        <section class="blog clearfix blog_lastChild">
           <ul class="breadcrumb">
             <li><a href="">Fb</a></li>
             <li><a href="">Twitter</a></li>

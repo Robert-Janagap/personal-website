@@ -226,6 +226,9 @@ h6 {
   padding-bottom: 0.312rem;
   border-bottom: 2px solid #d9e0e2;
 }
+.blog_lastChild {
+  margin-bottom: 0;
+}
 .blog_date_posted {
   position: absolute;
   top: 0;
@@ -351,7 +354,7 @@ h6 {
 }
 .contact_overlay {
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
@@ -475,8 +478,8 @@ h6 {
 }
 
 .scroll_top {
-  position: fixed;
-  bottom: 240px;
+  position: absolute;
+  bottom: 10px;
   right: 5%;
   z-index: 1;
 }
@@ -487,9 +490,6 @@ h6 {
   display: none;
 }
 
-.set {
-  margin-bottom: 20px;
-}
 .set_title {
   border-bottom: 2px solid #d9e0e2;
 }
@@ -704,6 +704,21 @@ footer .footer_nav--items:last-child {
     margin-right: 0;
     margin-bottom: 5.062%;
   }
+
+  .blog_date_posted {
+    position: relative;
+  }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 599px) {
   .container {
@@ -743,6 +758,17 @@ footer .footer_nav--items:last-child {
 
   .sideBar_search--btn {
     width: 13%;
+  }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 719px) {
@@ -792,6 +818,17 @@ footer .footer_nav--items:last-child {
   .sideBar_search--btn {
     width: 15%;
   }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
+  }
 }
 @media screen and (min-width: 720px) and (max-width: 799px) {
   .container {
@@ -833,6 +870,17 @@ footer .footer_nav--items:last-child {
   .sideBar_search--btn {
     width: 15%;
   }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 959px) {
   .container {
@@ -865,6 +913,17 @@ footer .footer_nav--items:last-child {
 
   .header_responsive {
     width: 50%;
+  }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
   }
 
   .sideBar_search--input {

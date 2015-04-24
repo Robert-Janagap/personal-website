@@ -6,13 +6,23 @@
     <title>Contact me</title>
     <meta name="description" content="My Personal website home page.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="assets/js/modernizr-2.7.1.min.js"></script>
     <link rel="stylesheet" href="../assets/css/lib/normalize.css">
     <link rel="stylesheet" href="../assets/css/lib/boilerplate-style.css">
     <link rel="stylesheet" href="../assets/css/lib/font-awesome.css">
     <link rel="stylesheet" href="../assets/css/main.css">
   </head>
-  <body><!--[if lt IE 8]>
+  <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=888977994473736";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+    </script><!--[if lt IE 8]>
     <p class="browsehappy">
       You are using an <strong>outdated</strong> browser.
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
@@ -42,7 +52,7 @@
     </header>
     <div class="small-space"></div>
     <div class="container">
-      <main class="col-9">
+      <main class="col-9 col-md-12 col-sm-12">
         <article class="contact">
           <div class="contact_overlay">
             <h2 class="overlay_message">under construction</h2>
@@ -93,7 +103,6 @@
             </form>
           </div>
         </article>
-        <div class="small-space"></div>
       </main>
       <aside class="sideBar col-3 col-md-6 col-sm-12">
         <section class="sideBar_section">

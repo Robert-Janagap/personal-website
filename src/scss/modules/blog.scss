@@ -3,6 +3,9 @@
 	margin-bottom: $blog--margin-bottom;
 	padding-bottom: $blog--padding-bottom;
 	border-bottom: $blog--border-bottom;
+	&_lastChild{
+		margin-bottom: 0;
+	}
 	&_date_posted{
 		position: $blog_date--position;
 		top: $blog_date--top;
