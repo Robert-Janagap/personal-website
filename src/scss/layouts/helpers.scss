@@ -20,6 +20,8 @@
         margin-left: $header_navMenu--margin-left;
         &--link{
             font-size: $h3-font-size;
+            color:#7E7E7E;
+            transition: color .3s ease;
             &:hover{
                 color:$header_navlinks--hover-color;
                 text-decoration: none;
@@ -42,7 +44,10 @@
     &_title{
         margin-bottom: $sideBar_title--margin-bottom;
     }
-    li + li{
+    &_items a{
+        transition: color .2s ease;
+    }
+    &_items + &_items{
         margin-left: $sideBar_links--margin-left;
         margin-top: $sideBar_links--margin-top;
     }

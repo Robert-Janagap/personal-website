@@ -17,6 +17,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font: 100%/1.4 "lato",Tahoma,sans-serif;
@@ -28,7 +30,7 @@ body {
 a {
   text-decoration: none;
   font-family: 'ubuntu';
-  color: #7E7E7E;
+  color: #999999;
 }
 a:hover {
   color: #000;
@@ -254,7 +256,6 @@ h6 {
 .blog_content_links {
   color: #000;
   text-decoration: underline;
-  text-transform: uppercase;
 }
 .blog_category {
   margin-top: 1.875rem;
@@ -500,7 +501,7 @@ h6 {
   float: left;
   margin-right: 2.062%;
   margin-bottom: 20px;
-  border-right: 2px solid #eceff0;
+  border-right: 2px solid #e2e2e2;
 }
 .list:last-child {
   border-right: none;
@@ -562,6 +563,9 @@ h6 {
 }
 .header_items--link {
   font-size: 1.424em;
+  color: #7E7E7E;
+  -webkit-transition: color .3s ease;
+          transition: color .3s ease;
 }
 .header_items--link:hover {
   color: #EDEDED;
@@ -582,7 +586,11 @@ h6 {
 .sideBar_title {
   margin-bottom: 0.312rem;
 }
-.sideBar li + li {
+.sideBar_items a {
+  -webkit-transition: color .2s ease;
+          transition: color .2s ease;
+}
+.sideBar_items + .sideBar_items {
   margin-left: 0.75rem;
   margin-top: 0.3125rem;
 }
