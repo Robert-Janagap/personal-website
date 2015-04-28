@@ -10,6 +10,7 @@ jade           = require('gulp-jade'),
 jshint         = require('gulp-jshint'),
 minifyHTML     = require('gulp-minify-html'),
 minifyCSS      = require('gulp-minify-css'),
+minifyImage    = require('gulp-imagemin'),
 plumber        = require('gulp-plumber'),
 rename         = require('gulp-rename'),
 sass           = require('gulp-sass'),
@@ -95,23 +96,32 @@ gulp.task('livereload', function(){
 });
 
 /** Compiler */
-gulp.task('compress',function(){
-	gulp.src('src/js/*.js')
-		.pipe(uglify())
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('build/assets/js/'))
-});
 gulp.task('minifyHTML', function(){
-	gulp.src('./build/index.html')
+	gulp.src('build/index.html')
 		.pipe(minifyHTML())
-		.pipe(rename('index.min.html'))
-		.pipe(gulp.dest('./build/'))
+		.pipe(gulp.dest('build/'));
 });
 gulp.task('minifyCSS', function(){
-	gulp.src('./build/assets/css/main.css')
+	gulp.src('build/assets/css/**/*.css')
 		.pipe(minifyCSS())
-		.pipe(gulp.dest('./build/assets/css/'))
+		.pipe(gulp.dest('build/assets/css/'));
+});
+gulp.task('minifyJs',function(){
+	gulp.src('src/js/*.js')
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/assets/js/'));
+});
+gulp.task('minifyImage', function(){
+	gulp.src('build/assets/img/*')
+		.pipe(minifyImage({
+			progressive: true,
+			optimizationLevel: 7
+		}))
+		.pipe(gulp.dest('build/assets/img/'));
 });
 
-/** gulp default run */
-gulp.task('default',['server', 'watch','livereload']);
+/** compress files */
+gulp.task('compress', [ 'minifyHTML', 'minifyCSS', 'minifyJs', 'minifyImage' ]);
+/** gulp default */
+gulp.task('default',[ 'server', 'watch', 'livereload' ]);
