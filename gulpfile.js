@@ -122,6 +122,6 @@ gulp.task('minifyImage', function(){
 });
 
 /** compress files */
-gulp.task('compress', [ 'minifyHTML', 'minifyCSS', 'minifyJs', 'minifyImage' ]);
+gulp.task('compress', [ 'minifyHTML', 'minifyCSS', 'minifyJs', 'minifyImage', 'livereload' ]);
 /** gulp default */
 gulp.task('default',[ 'server', 'watch', 'livereload' ]);

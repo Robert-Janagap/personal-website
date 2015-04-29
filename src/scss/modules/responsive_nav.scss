@@ -18,7 +18,7 @@
     top: 80px;
     right: 0;
     z-index: 5;
-    background:rgba(0, 0, 0, 0.8);
+    background:rgba(0, 0, 0, 0.9);
     text-align: center;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     border-radius: 3px;
@@ -43,7 +43,6 @@
 }
 .header_logo--fixed{
     @include header_fixed;
-    top: 0;
     left: 0;
     padding: 0 10px 0 25px;
     border-radius: 0 10px 10px 0;
@@ -53,7 +52,6 @@
 }
 .nav_icon--fixed{
     @include header_fixed;
-    top: 0;
     padding: 15px 25px 15px 10px;
     border-radius: 10px 0 0 10px;
     display: block;
