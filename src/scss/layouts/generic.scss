@@ -1,11 +1,51 @@
 @media screen and (min-width: 240px) and (max-width: 319px){
-	.header_list{
-		display: none;
+	.container{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.col-sm-12{
+		@include span(12);
+	}
+	.logo--small{
+		width: 150px !important;
+	}
+	.header{
+		&_list{
+			display: none;
+		}
+		&_responsive{
+			width: 100%;
+		}
 	}
 	.nav_icon{
 		display: block;
 	}
-	.header_responsive{
+	.tagLine_title{
+		font-size: 2em;
+	}
+	.sideBar_search--input{width:65%}
+	.list{
 		width: 100%;
+		height: auto;
+		margin-right: 0;
+		border-right: 0;
+		margin-bottom: 15px;
+	}
+	.project_items{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5.062%;
+	}
+	.blog_date_posted{
+		position: relative;
+	}
+	.blog_index{
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.sideBar{
+		margin-top: 50px;
 	}
 }

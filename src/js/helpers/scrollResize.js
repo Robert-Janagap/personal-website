@@ -9,8 +9,8 @@ function scrollResize(){
 	this.scroll_top = true;
 }
 	scrollResize.prototype.showFixedNav = function(){
-		this.headerNav_logo.show(400);
-		this.headerNav_icon.addClass('nav_icon--fixed').show();
+		this.headerNav_logo.show();
+		this.headerNav_icon.addClass('nav_icon--fixed');
 		this.headerNav_responsive.css('top', '60px');
 	};
 	scrollResize.prototype.hideFixedNav = function(){
@@ -26,12 +26,12 @@ function scrollResize(){
 
 	var sr = new scrollResize();
 
-	$(window).on('resize', function(e){//when the window resize
-		if( sr.win.scrollTop() >= 80 ){
-			 sr.showFixedNav();
+	//when the window resize
+	$(window).on('resize', function(e){
+		if( sr.win.scrollTop() > 80 ){
+			sr.showFixedNav();
 		}else{
-			 sr.hideFixedNav();
-
+			sr.hideFixedNav();
 			if(sr.win.width() >= 1024){
 				 sr.hideResponsiveNav();
 			}

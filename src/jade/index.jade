@@ -13,7 +13,7 @@ append scripts
     script(src="assets/js/main.js")
 append logo
     a(href="./")
-        img(src="assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;")
+        img(src="assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;").logo--small
     a(href="").header_logo--fixed
         img(src="assets/img/rr_logo.png" alt="My Logo" style="height: 60px;")
 append mainNav-links
@@ -63,36 +63,10 @@ block banner
 block mainContent
     main.col-9.col-md-12.col-sm-12
         h2 New Blogs
-        section.blog.clearfix
+        section.blog.clearfix.blog_lastChild
             ul.breadcrumb
                 li: .fb-share-button(data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count") Share
                 li: a(href="https://twitter.com/share" data-url="https://twitter.com/Janagap_Robert" data-text="Trying out the twitter button" data-via="Janagap_Robert" data-related="Janagap_Robert" data-hashtags="exercise").twitter-share-button Tweet
-            .blog_date_posted
-                | March 5, 2015 /
-                a(href="about/index.html") Robert Janagap
-            h1.blog_title Blog Title || New Post
-            img(src="assets/img/image_1.jpg" style= "width:100%; height: 350px").blog_picture
-            article.blog_content
-              p
-                |   Lorem ipsum dolor sit amet,
-                a(href="#").blog_content_links consectetur
-                | adipisicing elit. Ipsa veritatis excepturi distinctio tempore incidunt quas non quaerat harum alias eum dolore doloremque, sequi eveniet porro, ratione, perspiciatis quos. Qui excepturi id illo nemo totam fugiat, enim mollitia perferendis voluptas vitae, natus eligendi officiis debitis eum delectus assumenda repellendus quod dolorem.....
-            a(href="#").btn.btn_green read more
-            .blog_category
-                p
-                    | category:
-                    a(href="#")  web Development
-                    | ,
-                    a(href="#")  web Design
-                p
-                    | tags:
-                    a(href="#")  youjizz
-                    | ,
-                    a(href="#")  fakku
-        section.blog.clearfix.blog_lastChild
-            ul.breadcrumb
-                li: a(href="") Fb
-                li: a(href="") Twitter
             .blog_date_posted
                 | March 5, 2015 /
                 a(href="about/index.html") Robert Janagap

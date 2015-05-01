@@ -217,7 +217,8 @@ h6 {
   color: #fff;
   text-align: center;
 }
-.banner .tagLine_title {
+
+.tagLine_title {
   margin: 3.125rem 0;
   font-size: 2.8em;
 }
@@ -533,15 +534,6 @@ h6 {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.is-transparent {
-  box-shadow: none;
-  border: none;
-  background: none;
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-}
-
 .header {
   position: relative;
   z-index: 5;
@@ -661,16 +653,68 @@ footer .footer_nav--items:last-child {
 }
 
 @media screen and (min-width: 240px) and (max-width: 319px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .col-sm-12 {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .logo--small {
+    width: 150px !important;
+  }
+
   .header_list {
     display: none;
+  }
+  .header_responsive {
+    width: 100%;
   }
 
   .nav_icon {
     display: block;
   }
 
-  .header_responsive {
+  .tagLine_title {
+    font-size: 2em;
+  }
+
+  .sideBar_search--input {
+    width: 65%;
+  }
+
+  .list {
     width: 100%;
+    height: auto;
+    margin-right: 0;
+    border-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .project_items {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5.062%;
+  }
+
+  .blog_date_posted {
+    position: relative;
+  }
+
+  .blog_index {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sideBar {
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -970,4 +1014,16 @@ footer .footer_nav--items:last-child {
   .sideBar_search--btn {
     width: 20%;
   }
+}
+.is-transparent {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.is-click {
+  color: #EDEDED;
 }
