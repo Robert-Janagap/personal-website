@@ -1,67 +1,16 @@
 (function($){
-	var win = $(window),
-		scrollTop_btn = $('.scroll_top--btn'),
-		headerNav_responsive = $('.header_responsive'),
-		headerNav_icon = $('.nav_icon'),
-		overlay = $('.overlay'),
-		scroll_top = true;
-
-	$(window).on('resize', function(e){//when the window resize
-		if(win.scrollTop() >= 80){
-			$('.header_logo--fixed').show(400);
-			headerNav_icon.addClass('nav_icon--fixed').show();
-			headerNav_responsive.css('top', '60px');
-		}else{
-			$('.header_logo--fixed').hide();
-			headerNav_icon.removeClass('nav_icon--fixed');
-			headerNav_responsive.css('top', '80px');
-			if(win.width() >= 1024){
-				headerNav_responsive.slideUp(400);
-				overlay.fadeOut(400);
-				headerNav_icon.removeClass('nav_icon--click');
-				}
-		}
-		if(win.width() <= 479){
-			scrollTop_btn.hide();
-		}
-	}).on('scroll', function(){
-		//when the window scroll down
-		//view the fixed nav icon button
-		if( win.scrollTop() >= 80 ){
-			$('.header_logo--fixed').show(400);
-			headerNav_icon.addClass('nav_icon--fixed');
-			headerNav_responsive.css('top', '60px');
-
-			//if the layout is phone no scroll up
-			scroll_top = (win.width() <= 479) ? false : true;
-		}else{
-		//when the window scroll up
-		//if the window greater the 960px close the fixed nav
-			if(win.width() >= 1024){
-				headerNav_responsive.slideUp(400);
-				overlay.fadeOut(400);
-				headerNav_icon.removeClass('nav_icon--click');
-			}
-			$('.header_logo--fixed').hide();
-			headerNav_icon.removeClass('nav_icon--fixed');
-			headerNav_responsive.css('top', '80px');
-		}
-		//scroll top button toggle
-		(win.scrollTop() > 500 && scroll_top) ? scrollTop_btn.fadeIn(600) : scrollTop_btn.fadeOut(600);
-	});
-
-	headerNav_icon.on('click', function(e){
+	$('.nav_icon').on('click', function(e){
 		e.preventDefault();
-		headerNav_responsive.slideToggle(300);
+		$('.header_responsive').slideToggle(300);
 		$(this).toggleClass('nav_icon--click');
-		overlay.fadeToggle(300);
+		$('.overlay').fadeToggle(300);
 	});
 
-	overlay.on('click', function(e){
+	$('.overlay').on('click', function(e){
 		e.preventDefault();
 		$(this).fadeOut(600);
-		headerNav_responsive.slideUp(400);
-		headerNav_icon.removeClass('nav_icon--click');
+		$('.header_responsive').slideUp(400);
+		$('.nav_icon').removeClass('nav_icon--click');
 	});
 
 

@@ -54,13 +54,13 @@ gulp.task('sass', function(){
 /** error linting */
 //jshint
 gulp.task('jshint', function(){
-	var src = 'src/js/*.js';
+	var src = 'src/js/**/*.js';
 	gulp.src(src)
-		.pipe(changed('build/assets/js/**/*.js'))
-		.pipe(plumber())
+		.pipe(changed('build/assets/js/*.js'))
 		.pipe(jshint())
 		.pipe(jshint.reporter(stylish))
-		.pipe(uglify())
+		.pipe(concat('main.js'))
+		//.pipe(uglify())
 		.pipe(gulp.dest('build/assets/js/'));
 });
 
@@ -86,7 +86,7 @@ gulp.task('compass',function(){
 gulp.task('watch', function(){
 	gulp.watch('src/jade/**/*.jade',['jade'])
 	gulp.watch('src/scss/**/*.scss',['compass'])
-	gulp.watch('src/js/*.js',['jshint'])
+	gulp.watch('src/js/**/*.js',['jshint'])
 });
 
 /** livereload */
@@ -107,7 +107,7 @@ gulp.task('minifyCSS', function(){
 		.pipe(gulp.dest('build/assets/css/'));
 });
 gulp.task('minifyJs',function(){
-	gulp.src('src/js/*.js')
+	gulp.src('src/js/**/*.js')
 		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('build/assets/js/'));
