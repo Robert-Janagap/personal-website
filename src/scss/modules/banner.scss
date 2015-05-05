@@ -8,7 +8,14 @@
 	color: #fff;
 	text-align: center;
 }
-.tagLine_title{
-	margin: 3.125rem 0;
-	font-size: 2.8em;
+.tagline{
+	&_title{
+		margin: 3.125rem 0;
+		font-size: 2.8em;
+	}
+	&_message{
+		overflow: hidden;
+		width: 65%;
+		margin: 0 auto;
+	}
 }

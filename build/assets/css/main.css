@@ -77,6 +77,10 @@ h6 {
   font-size: 1em;
 }
 
+.page_title {
+  text-transform: capitalize;
+}
+
 /**
  * lato for content
  * oswald for title
@@ -218,9 +222,14 @@ h6 {
   text-align: center;
 }
 
-.tagLine_title {
+.tagline_title {
   margin: 3.125rem 0;
   font-size: 2.8em;
+}
+.tagline_message {
+  overflow: hidden;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .blog {
@@ -248,6 +257,18 @@ h6 {
   padding: 2.187rem 0;
   margin-bottom: 1.875rem;
   border-bottom: 2px dashed #d9e0e2;
+}
+.blog_title--link {
+  text-decoration: none;
+  font-family: 'oswald';
+  color: #222;
+  text-transform: capitalize;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+}
+.blog_title--link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.67);
 }
 .blog_picture {
   width: 100%;
@@ -581,9 +602,14 @@ h6 {
 .sideBar_title {
   margin-bottom: 0.312rem;
 }
-.sideBar_items a {
-  -webkit-transition: color .2s ease;
-          transition: color .2s ease;
+.sideBar_items--link {
+  padding-bottom: 1px;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+}
+.sideBar_items--link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
 .sideBar_items + .sideBar_items {
   margin-left: 0.75rem;
@@ -680,7 +706,7 @@ footer .footer_nav--items:last-child {
     display: block;
   }
 
-  .tagLine_title {
+  .tagline_title {
     font-size: 2em;
   }
 

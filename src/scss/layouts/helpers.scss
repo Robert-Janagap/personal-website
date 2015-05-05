@@ -44,8 +44,15 @@
     &_title{
         margin-bottom: $sideBar_title--margin-bottom;
     }
-    &_items a{
-        transition: color .2s ease;
+    &_items {
+        &--link{
+            padding-bottom: 1px;
+            transition: all .2s ease;
+            &:hover{
+                text-decoration: none;
+                border-bottom: 1px solid #000;
+            }
+        }
     }
     &_items + &_items{
         margin-left: $sideBar_links--margin-left;

@@ -22,6 +22,17 @@
 		padding: $blog_title--padding;
 		margin-bottom: $blog_title--margin-bottom;
 		border-bottom: $blog_title--border-bottom;
+		&--link{
+			text-decoration: none;
+			font-family: 'oswald';
+			color: #222;
+			text-transform: capitalize;
+			transition: all .2s ease;
+			&:hover{
+				text-decoration: none;
+				color: rgba(0, 0, 0, 0.67);
+			}
+		}
 	}
 	&_picture{
 		width: $blog_picture--width;

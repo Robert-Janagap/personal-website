@@ -1,7 +1,7 @@
 extends ../lib/docwrapper
 
 append title-page
-    title Blog
+    title.page_title Blog
 append head-link
     link(rel ='stylesheet' href='../assets/css/lib/normalize.css')
     link(rel ='stylesheet' href='../assets/css/lib/boilerplate-style.css')
@@ -55,28 +55,26 @@ block mainContent
     main.col-9.col-md-12.col-sm-12
         section.blog.clearfix
             ul.breadcrumb
-                li: a(href="") Fb
-                li: a(href="") Twitter
+                li: .fb-share-button(data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count") Share
+                li: a(href="https://twitter.com/share" data-url="https://twitter.com/Janagap_Robert" data-text="Trying out the twitter button" data-via="Janagap_Robert" data-related="Janagap_Robert" data-hashtags="exercise").twitter-share-button Tweet
             .blog_date_posted
-                | March 5, 2015 /
-                a(href="about/index.html") Robert Janagap
-            h1.blog_title Blog Title || New Post
+                | May 3, 2015 /
+                a(href="../about/index.html") Robert Janagap
+            h1.blog_title
+                a(href="my-first-blog/").blog_title--link My first blog
             img(src="../assets/img/image_1.jpg" style= "width:100%; height: 350px").blog_picture
             article.blog_content
                 p
-                    | Lorem ipsum dolor sit amet,
-                    a(href="#").blog_content_links consectetur
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius impedit ipsum consequatur explicabo ea facilis mollitia nobis. Soluta dicta cumque aut labore error esse optio cupiditate laboriosam illum tempora animi in, eius facilis atque molestias dignissimos temporibus consectetur nostrum saepe maiores iusto natus beatae. Placeat ab assumenda cumque deserunt molestias.
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem, atque fugiat, enim ab nemo ipsum provident modi optio harum hic distinctio deserunt aliquid voluptatibus consequuntur cum. Eos eaque illo, dolorem adipisci repellat mollitia maiores facere ex eum earum iste. Atque facilis eum beatae quas earum fugit nobis, nam voluptatibus.
-                p
-                    | Lorem ipsum dolor sit amet,
-                    a(href="#").blog_content_links consectetur
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius impedit ipsum consequatur explicabo ea facilis mollitia nobis. Soluta dicta cumque aut labore error esse optio cupiditate laboriosam illum tempora animi in, eius facilis atque molestias dignissimos temporibus consectetur nostrum saepe maiores iusto natus beatae. Placeat ab assumenda cumque deserunt molestias.
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem, atque fugiat, enim ab nemo ipsum provident modi optio harum hic distinctio deserunt aliquid voluptatibus consequuntur cum. Eos eaque illo, dolorem adipisci repellat mollitia maiores facere ex eum earum iste. Atque facilis eum beatae quas earum fugit nobis, nam voluptatibus.
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem, atque fugiat, enim ab nemo ipsum provident modi optio harum hic distinctio deserunt aliquid voluptatibus consequuntur cum. Eos eaque illo, dolorem adipisci repellat mollitia maiores facere ex eum earum iste. Atque facilis eum beatae quas earum fugit nobis, nam voluptatibus.
+                    | After one year of studying and learning in the field of front-end developemnt and web design
+                    a(href="#").blog_content_links  here
+                    | ,
+                    a(href="#").blog_content_links  here
+                    | ,
+                    | and
+                    a(href="#").blog_content_links  here
+                    | .
+                    | Therefore I decided to make a website where I can blog, share and discuss what I learned and what is trending right now in the world of web especially in front-end development....
+            a(href="my-first-blog/").btn.btn_green read more
             .blog_category
                 p
                     | category:

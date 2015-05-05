@@ -52,6 +52,9 @@ h5{
 h6{
 	font-size: 1em;
 }
+.page_title{
+	text-transform: capitalize;
+}
 //getting rid of deprecation warning in susy
 @mixin box-sizing($value){
 	-moz-box-sizing: $value;

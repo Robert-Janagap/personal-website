@@ -1,0 +1,91 @@
+extends ../../lib/docwrapper
+
+append title-page
+    title.page_title My First Blog
+append head-link
+    link(rel ='stylesheet' href='../../assets/css/lib/normalize.css')
+    link(rel ='stylesheet' href='../../assets/css/lib/boilerplate-style.css')
+    link(rel ='stylesheet' href='../../assets/css/lib/font-awesome.css')
+    link(rel ='stylesheet' href='../../assets/css/main.css')
+append scripts
+    script window.jQuery || document.write('<script src="../../assets/js/lib/jquery-1.11.1.min.js"><\/script>')
+    script(src="../../assets/js/main.js")
+append logo
+    a(href="../../")
+        img(src="../../assets/img/logo-2.png" alt="My Logo" style="width: 200px; height: 48px;")
+    a(href="../../").header_logo--fixed
+        img(src="../../assets/img/rr_logo.png" alt="My Logo" style="height: 60px;")
+append mainNav-links
+    nav.header_nav
+        ul.header_list
+            li.header_items
+                a(href="../../about/").header_items--link About
+            li.header_items
+                a(href="../").header_items--link Blog
+            li.header_items
+                a(href="../../contact/").header_items--link Contact
+append responsive-links
+    nav.header_responsive
+        ul.header_responsive--nav
+            li.header_responsive--items
+                a(href="../../about/").header_responsive--link About
+            li.header_responsive--items
+                a(href="../").header_responsive--link Blog
+            li.header_responsive--items
+                a(href="../../contact/").header_responsive--link Contact
+append mainFooter
+    ul
+        li.footer_nav--items
+            a(href="../../").footer_nav--link Home
+        li.footer_nav--items
+            a(href="../../about/").footer_nav--link About
+        li.footer_nav--items
+            a(href="").footer_nav--link Blog
+        li.footer_nav--items
+            a(href="../../contact/").footer_nav--link Contact
+        li.footer_nav--items
+            a(href="").footer_nav--link Facebook
+        li.footer_nav--items
+            a(href="").footer_nav--link Github
+        li.footer_nav--items
+            a(href="").footer_nav--link Twitter
+append myName
+    a(href="../../")  Robert Janagap
+block mainContent
+    main.col-9.col-md-12.col-sm-12
+        section.blog.clearfix
+            ul.breadcrumb
+                li: .fb-share-button(data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count") Share
+                li: a(href="https://twitter.com/share" data-url="https://twitter.com/Janagap_Robert" data-text="Trying out the twitter button" data-via="Janagap_Robert" data-related="Janagap_Robert" data-hashtags="exercise").twitter-share-button Tweet
+            .blog_date_posted
+                | March 5, 2015 /
+                a(href="about/index.html") Robert Janagap
+            h1.blog_title
+                a(href="#").blog_title--link My first blog
+            img(src="../../assets/img/image_1.jpg" style= "width:100%; height: 350px").blog_picture
+            article.blog_content
+               p
+                    | After one year of studying and learning in the field of front-end developemnt and web design
+                    a(href="#").blog_content_links  here
+                    | ,
+                    a(href="#").blog_content_links  here
+                    | ,
+                    | and
+                    a(href="#").blog_content_links  here
+                    | .
+                    | Therefore I decided to make a website where I can blog, share and discuss what I learned and what is trending right now in the world of web especially in front-end development.I'm a freelancer, a student and a crazy one in a good way. I like doing things that can farther improve my personality and skills.
+                p
+                    | I'm more efficient with a team and I love listening and really interested in ideas especially the one that can help and give happinness to other people. Writing is quite uncomfortable for me while sharing it feels like my body is so lite and my mind full of positive thoughts. In this site you will see my skills, my blogs, and my projects.
+            .blog_category
+                p
+                    | category:
+                    a(href="#")  web Development
+                    | ,
+                    a(href="#")  web Design
+                p
+                    | tags:
+                    a(href="#")  youjizz
+                    | ,
+                    a(href="#")  fakku
+    .scroll_top
+        .scroll_top--btn.fa.fa-arrow-circle-up.fa-4x

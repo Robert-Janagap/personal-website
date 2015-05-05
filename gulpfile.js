@@ -91,7 +91,7 @@ gulp.task('watch', function(){
 
 /** livereload */
 gulp.task('livereload', function(){
-	watch(['./build/*.html', './build/assets/css/main.css','./build/assets/js/*.js'])
+	watch(['./build/**/*.html', './build/assets/css/main.css','./build/assets/js/*.js'])
 		.pipe(connect.reload());
 });
 
