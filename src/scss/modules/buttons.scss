@@ -8,9 +8,9 @@
 	text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	font-size: $h4-font-size;
 	text-transform: capitalize;
-}
-.btn_large{
-	font-size: $h3-font-size;
+	&--small{
+		font-size: $h5-font-size;
+	}
 }
 //buttons color
 $colors: (

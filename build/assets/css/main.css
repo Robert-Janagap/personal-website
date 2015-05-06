@@ -54,27 +54,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.802em;
+  font-size: 3.157em;
 }
 
 h2 {
-  font-size: 1.602em;
+  font-size: 2.369em;
 }
 
 h3 {
-  font-size: 1.424em;
+  font-size: 1.777em;
 }
 
 h4 {
-  font-size: 1.266em;
+  font-size: 1.333em;
 }
 
 h5 {
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 .page_title {
@@ -224,7 +224,6 @@ h6 {
 
 .tagline_title {
   margin: 3.125rem 0;
-  font-size: 2.8em;
 }
 .tagline_message {
   overflow: hidden;
@@ -238,19 +237,38 @@ h6 {
   padding-bottom: 0.312rem;
   border-bottom: 2px solid #d9e0e2;
 }
-.blog_lastChild {
-  margin-bottom: 0;
+.blog .breadcrumb {
+  line-height: .8;
+}
+.blog .breadcrumb li {
+  display: inline-block;
+}
+.blog_category {
+  margin-top: 1.875rem;
+  text-transform: capitalize;
+}
+.blog_category p {
+  margin: 5px;
+}
+.blog_content {
+  overflow: hidden;
+  letter-spacing: .3px;
+}
+.blog_content_links {
+  color: #000;
+  text-decoration: underline;
 }
 .blog_date_posted {
   position: absolute;
   top: 0;
   right: 0;
 }
-.blog .breadcrumb {
-  line-height: .8;
+.blog_lastChild {
+  margin-bottom: 0;
 }
-.blog .breadcrumb li {
-  display: inline-block;
+.blog_picture {
+  width: 100%;
+  height: 350px;
 }
 .blog_title {
   text-align: center;
@@ -268,26 +286,7 @@ h6 {
 }
 .blog_title--link:hover {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.67);
-}
-.blog_picture {
-  width: 100%;
-  height: 350px;
-}
-.blog_content {
-  overflow: hidden;
-  letter-spacing: .3px;
-}
-.blog_content_links {
-  color: #000;
-  text-decoration: underline;
-}
-.blog_category {
-  margin-top: 1.875rem;
-  text-transform: capitalize;
-}
-.blog_category p {
-  margin: 5px;
+  color: #37465d;
 }
 
 .blog_index {
@@ -315,12 +314,11 @@ h6 {
   color: #fff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: 1.266em;
+  font-size: 1.333em;
   text-transform: capitalize;
 }
-
-.btn_large {
-  font-size: 1.424em;
+.btn--small {
+  font-size: 1em;
 }
 
 .btn_red {
@@ -390,7 +388,7 @@ h6 {
 }
 
 .overlay_message {
-  width: 250px;
+  width: 280px;
   height: auto;
   margin: 0 auto;
   background: #fff;
@@ -601,15 +599,6 @@ h6 {
 }
 .sideBar_title {
   margin-bottom: 0.312rem;
-}
-.sideBar_items--link {
-  padding-bottom: 1px;
-  -webkit-transition: all .2s ease;
-          transition: all .2s ease;
-}
-.sideBar_items--link:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 .sideBar_items + .sideBar_items {
   margin-left: 0.75rem;
@@ -1052,4 +1041,14 @@ footer .footer_nav--items:last-child {
 
 .is-click {
   color: #EDEDED;
+}
+
+.is-hover {
+  padding-bottom: 1px;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+}
+.is-hover:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }

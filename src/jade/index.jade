@@ -53,50 +53,54 @@ append myName
 block banner
     .container
         .banner.clearfix
-            h1.tagline_title Constant And Never-ending Improvements
+            .tagline_title
+                h1 Constant And Never-ending Improvements
             .tagline
                 .tagline_picture
                     img(src="assets/img/pw-picture.png" alt="Profile Picture")
                     .caption Robert Y. Janagap
                 .tagline_message
                     p A Student, Freelancer, Designer, and Front-end guy. Living in the city of smile( Bacolod city ) from the Philippines. Through creating a website I feel like a wizard. A lot of magic.
-                a(href="about/").btn.btn_large.btn_blue view my portfolio
+                a(href="about/").btn.btn_blue view my portfolio
 block mainContent
     main.col-9.col-md-12.col-sm-12
-        h2 New Blogs
+        h3 New Blogs
         section.blog.clearfix.blog_lastChild
             ul.breadcrumb
                 li: .fb-share-button(data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count") Share
                 li: a(href="https://twitter.com/share" data-url="https://twitter.com/Janagap_Robert" data-text="Trying out the twitter button" data-via="Janagap_Robert" data-related="Janagap_Robert" data-hashtags="exercise").twitter-share-button Tweet
             .blog_date_posted
                 | May 3, 2015 /
-                a(href="about/index.html") Robert Janagap
-            h1.blog_title
+                a(href="about/index.html").is-hover Robert Janagap
+            h2.blog_title
                 a(href="blog/my-first-blog/").blog_title--link my first blog
             img(src="assets/img/image_1.jpg" style= "width:100%; height: 350px").blog_picture
             article.blog_content
                 p
                     | After one year of studying and learning in the field of front-end developemnt and web design
-                    a(href="#").blog_content_links  here
+                    | &nbsp;
+                    a(href="#").blog_content_links here
                     | ,
-                    a(href="#").blog_content_links  here
+                    | &nbsp;
+                    a(href="#").blog_content_links here
                     | ,
                     | and
-                    a(href="#").blog_content_links  here
+                    | &nbsp;
+                    a(href="#").blog_content_links here
                     | .
                     | Therefore I decided to make a website where I can blog, share and discuss what I learned and what is trending right now in the world of web especially in front-end development....
-            a(href="blog/my-first-blog/").btn.btn_green read more
+            a(href="blog/my-first-blog/").btn.btn_green.btn--small read more
             .blog_category
                 p
                     | category:
-                    a(href="#")  web Development
+                    a(href="#").blog_category--link.is-hover  web Development
                     | ,
-                    a(href="#")  web Design
+                    a(href="#").blog_category--link.is-hover  web Design
                 p
                     | tags:
-                    a(href="#")  youjizz
+                    a(href="#").blog_category--link.is-hover  youjizz
                     | ,
-                    a(href="#")  fakku
+                    a(href="#").blog_category--link.is-hover  fakku
     .scroll_top
         .scroll_top--btn.fa.fa-arrow-circle-up.fa-4x
 

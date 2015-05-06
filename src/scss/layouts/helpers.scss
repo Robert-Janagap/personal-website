@@ -19,7 +19,7 @@
         display: $header_navMenu--display;
         margin-left: $header_navMenu--margin-left;
         &--link{
-            font-size: $h3-font-size;
+            font-size: $mainNav-font-size;
             color:#7E7E7E;
             transition: color .3s ease;
             &:hover{
@@ -43,16 +43,6 @@
     }
     &_title{
         margin-bottom: $sideBar_title--margin-bottom;
-    }
-    &_items {
-        &--link{
-            padding-bottom: 1px;
-            transition: all .2s ease;
-            &:hover{
-                text-decoration: none;
-                border-bottom: 1px solid #000;
-            }
-        }
     }
     &_items + &_items{
         margin-left: $sideBar_links--margin-left;
