@@ -10,7 +10,7 @@ html.no-js
     block head-link
 
   body
-    //-for share button
+    //-facebook share button
     #fb-root
     script.
       (function(d, s, id) {
@@ -20,6 +20,7 @@ html.no-js
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=888977994473736";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+    //-twitter tweet button
     script.
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 

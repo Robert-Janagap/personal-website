@@ -306,21 +306,6 @@ h6 {
   box-shadow: inset 3px 3px 8px #cccccc, inset -3px -3px 8px #cccccc;
 }
 
-.btn {
-  padding: .625rem;
-  text-align: center;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #fff;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: 1.333em;
-  text-transform: capitalize;
-}
-.btn--small {
-  font-size: 1em;
-}
-
 .btn_red {
   background: #ea0303;
 }
@@ -337,27 +322,53 @@ h6 {
   background: #03ea06;
 }
 
+.btn {
+  padding: .625rem;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.333em;
+  text-transform: capitalize;
+}
+.btn--small {
+  font-size: 1em;
+}
+
+.btn_red {
+  border: 1px solid #970202;
+}
 .btn_red:hover {
-  background: #fd6868;
-  color: #EDEDED;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.66);
+  color: #fff;
   text-decoration: none;
 }
 
+.btn_blue {
+  border: 1px solid #026a97;
+}
 .btn_blue:hover {
-  background: #68d0fd;
-  color: #EDEDED;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.66);
+  color: #fff;
   text-decoration: none;
 }
 
+.btn_orange {
+  border: 1px solid #974502;
+}
 .btn_orange:hover {
-  background: #fdab68;
-  color: #EDEDED;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.66);
+  color: #fff;
   text-decoration: none;
 }
 
+.btn_green {
+  border: 1px solid #03c906;
+}
 .btn_green:hover {
-  background: #68fd6b;
-  color: #EDEDED;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.66);
+  color: #fff;
   text-decoration: none;
 }
 
